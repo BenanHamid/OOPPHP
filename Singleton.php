@@ -12,7 +12,24 @@
  * @author Benoa
  */
 class Singleton {
-    //put your code here
-    //sadasd
+    private static $instance = null;
+    private $work;
+    
+    private function __construct() {
+        
+    }
+    
+    public static function getInstance(){
+        if(self::$instance == null){
+            self::$instance = new Singleton();
+        }
+        return self::$instance;
+    }
+    public function getTest(){
+        return $this->work;
+    }
+    public function setTest($a){
+        $this->work = $a;
+    }
     
 }
