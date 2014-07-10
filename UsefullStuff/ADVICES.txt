@@ -1,0 +1,7 @@
+//IMP nedei da polzva6 mn include-ove 4e moje da ti namerqt faila i qko da go injektirat
+CREATE BOT TO TEST HOW IT WORKS
+
+http://stackoverflow.com/questions/2395315/most-important-and-frequently-used-design-patterns
+4ETI TAQ KNIGA ZA DESIGN PATTERNS !!!!!!!!!!!!!
+https://sites.google.com/site/steveyegge2/singleton-considered-stupid
+4ETI I TOVA 
