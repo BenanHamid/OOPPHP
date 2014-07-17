@@ -7,6 +7,8 @@ class Decorator{
 		$this->obj = $obj;
 	}
 	public function getFormattedData(){
-		echo '<b>'.$this->obj->validate().'</b>';
+		echo '<b>';
+		return $this->obj->validate();
+	
 	}
 }

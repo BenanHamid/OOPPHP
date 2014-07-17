@@ -5,9 +5,9 @@ spl_autoload_register();
 /*$a = new Validator();
 $b = new Decorator($a);
 $b->getFormattedData();*/
-
+//echo '<pre>'.print_r($a, true).'</pre>';
 /*$a[] = array(0=>'kolio');
-echo '<pre>'.print_r($a, true).'</pre>';
+
 */
 
 $a = new Validator();
@@ -19,4 +19,13 @@ $a->setRules('username', 'max_length', 8)
 //$a->validate();
 
 $b = new Decorator($a);
-echo $b->getFormattedData();
+$c = $b->getFormattedData();
+//var_dump($c);
+foreach($c as $k=>$v){
+	echo $v;
+}
+
+
+
+
+

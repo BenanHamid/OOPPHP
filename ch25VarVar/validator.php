@@ -21,10 +21,14 @@ class Validator{
 	public function validate(){
 		foreach($this->rules as $k=>$v){
 			foreach($v as $vv){
-				$a[0] = array($this->$vv['type']($k, $vv['param']));
-				echo '<pre>'.print_r($a, true).'</pre>';
+				$a[$k] = ($this->$vv['type']($k, $vv['param']));
+				//echo '<pre>'.print_r($a, true).'</pre>';
+				
+				
 			}
 		}
+		//cho '<pre>'.print_r($a, true).'</pre>';
+		return $a;
 	}
 	private function min_length($field, $param){
 		if(mb_strlen($this->data[$field]) > $param){
