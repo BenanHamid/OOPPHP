@@ -23,7 +23,7 @@ class Validator{
 			foreach($v as $vv){
 				$a[$k] = ($this->$vv['type']($k, $vv['param']));
 				//echo '<pre>'.print_r($a, true).'</pre>';
-				
+				//sdsadasd
 				
 			}
 		}
