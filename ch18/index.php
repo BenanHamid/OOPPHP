@@ -1,11 +1,15 @@
 <?php
 include 'registry.php';
 
-Registry::setData('name', 'benan');
+/*Registry::setData('name', 'benan');
 $a = Registry::getData('name');
-echo $a.'<br>';
+//echo $a.'<br>';
 
-Registry::setData('sss', 'asdasdas');
-$b = Registry::getData('sss');
+Registry::setData('name', 'asdasdas');
+$b = Registry::getData('name');
 echo $b.'<br>';
-echo $a.'<br>';
+echo $a.'<br>';*/
+
+$a = new Registry();
+$a->lasldald = 122;
+echo $a->lasldald;
