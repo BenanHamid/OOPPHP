@@ -61,5 +61,9 @@ http://stackoverflow.com/questions/2407807/object-oriented-php-best-practices/24
 --BEST PRACTICES !!!
 http://en.wikipedia.org/wiki/Fluent_interface#PHP
 
+http://nosql.mypopescu.com/kb/nosql-getting-started - NOSQL
+https://blendercloud.r.worldssl.net/cloud/open_movies/tears_of_steel/video/ - GET BLENDER VIDEOS FREE THEY DIDNT PUT FORBIDDEN LOLLLL
+http://stackoverflow.com/questions/6119451/page-redirect-after-certain-time-php  - redirect after time !
+
 
 
