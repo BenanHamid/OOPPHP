@@ -17,7 +17,7 @@ class App{
 	}
 	//VIMP чрез това ще се стартира App !
 	public function run(){
-		//echo 'ok';
+		echo 'ok';
 	}
 	/**
 	*
