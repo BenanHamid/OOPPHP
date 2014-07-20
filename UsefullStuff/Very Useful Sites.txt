@@ -1,0 +1,69 @@
+http://www.artisteer.com/?p=demo - Tegli crack za tova; 
+http://www.absolutengine.com/download.php
+http://www.scriptdungeon.com/php_scripts.php - FREE PHP TEMPLATES
+http://www.opensourcescripts.com/info/library-accounting-system.html
+http://www.opensourcescripts.com/info/php-mysql-user-authentication.html
+http://www.hotscripts.com/category/scripts/php/web-sites/
+http://www.hotscripts.com/category/scripts/php/
+http://httpd.apache.org/docs/2.2/mod/mod_rewrite.html - htaccess to modify link www.abv.bg/lalala/bababa/index.php = ..../home/
+
+
+http://www.uniformserver.com/ - :Lightweight server
+Security razdelqi inputa(dumite) na 2; na vsqka purva duma razdelqne purvite 3 bukvi;
+http://www.slax.org/bg/ - linux slax
+hirens boot - 
+HD Tune info za  harda
+META CHARSET AKO NAPI6A NQKOLKO 6E IZPULNI POSLEDNO NAPISANATA
+http://tehnocarkubrat.free.bg/pages/catalogue.html - NE SUM ZATVORIL TUPIQ TAG (META)ZA TOVA NA MAIMUNICA IZLIZAT NE6TATA
+
+pass za apache 123 !
+
+http://www.youtube.com/watch?v=NenwV2OCTtA - java chat tutorial
+https://code.google.com/p/gstreamer-java/wiki/Tutorials - VIDEO CHAT
+http://www.linux-bg.org/cgi-bin/y/index.pl - linux bg info
+
+
+http://localhost/us_extra/phpinfo.php   - US_ROOTF_WWW - get document root !!!!
+http://www.scripts.com/php-scripts/cms-software/ - BEST PHP TEMPLATES SO FAR
+
+
+Use VirtualHosts - Apache !
+Alias /m/ "D:/TestMe"
+ <Directory "D:/TestMe/">
+   Options Indexes Includes
+     AllowOverride All
+     Order allow,deny
+     Allow from all
+ </Directory>
+- sus alias samo za moqta ma6ina a ina4e s ip moje i s drugi ma6ini !
+
+Alias /image/ "D:/UniServerZ/www/PHP"
+<Directory "D:/UniServerZ/www/PHP/">
+Order allow,deny
+Allow from all
+</Directory>
+
+
+http://www.thegeekstuff.com/2012/02/xss-attack-examples/ - XSS ATTACK EXAMPLES
+http://www.w3schools.com/PHP/php_form_validation.asp - MORE XSS EXAMPLES
+https://www.hostbulgaria.com/ - SUPER QK HOSTING 48 LEVA NA GODINA
+https://github.com/github/hubot - php TO C++ compiler na facebook
+CREATE BOT TO TEST HOW IT WORKS
+https://hubot.github.com/ - SUPER COOL BOT
+http://guides.railsgirls.com/github/ - how to work with github
+
+--------------------------
+HEAD FIRST DESIGN PATTERNS - LEARN THIS FUCK !
+--------------------------
+
+https://developers.google.com/speed/articles/optimizing-php - OPTIMIZATION AND BEST PRACTICES !
+http://stackoverflow.com/questions/2407807/object-oriented-php-best-practices/2408805#2408805
+--BEST PRACTICES !!!
+http://en.wikipedia.org/wiki/Fluent_interface#PHP
+
+http://nosql.mypopescu.com/kb/nosql-getting-started - NOSQL
+https://blendercloud.r.worldssl.net/cloud/open_movies/tears_of_steel/video/ - GET BLENDER VIDEOS FREE THEY DIDNT PUT FORBIDDEN LOLLLL
+http://stackoverflow.com/questions/6119451/page-redirect-after-certain-time-php  - redirect after time !
+
+
+
