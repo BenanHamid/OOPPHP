@@ -64,6 +64,7 @@ http://en.wikipedia.org/wiki/Fluent_interface#PHP
 http://nosql.mypopescu.com/kb/nosql-getting-started - NOSQL
 https://blendercloud.r.worldssl.net/cloud/open_movies/tears_of_steel/video/ - GET BLENDER VIDEOS FREE THEY DIDNT PUT FORBIDDEN LOLLLL
 http://stackoverflow.com/questions/6119451/page-redirect-after-certain-time-php  - redirect after time !
+http://androidwidgetcenter.com/android-tips/how-to-disable-data-network-on-android/ - DISABLE ANDROID MOBILE NETWORKS
 
 
 
