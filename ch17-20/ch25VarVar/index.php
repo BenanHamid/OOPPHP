@@ -11,10 +11,11 @@ $b->getFormattedData();*/
 */
 
 $a = new Validator();
-$a->setData(array('name'=>'ben', 'pass'=>'12345'));
+$a->setData(array('username'=>'ben', 'pass'=>'12345'));
 $a->setRules('username', 'max_length', 8)
 	->setRules('username', 'min_length', 4)
 	->setRules('pass', 'min_length', 4);
+    //->setRules('kofa', 'min_length', 5);
 
 //$a->validate();
 
@@ -22,10 +23,10 @@ $b = new Decorator($a);
 $c = $b->getFormattedData();
 //var_dump($c);
 foreach($c as $k=>$v){
-	echo $v;
+	foreach($v as $vv){
+        foreach($vv as $vvv){
+            echo $vvv;
+        }
+    }
 }
-
-
-
-
-
+ echo '</b>';
