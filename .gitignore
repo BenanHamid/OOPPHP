@@ -3,3 +3,10 @@ ch20/Article.php
 ch20/index.php
 ch20/iDecorator.php
 ch20/index.php
+*
+!.git/
+!.gitignore
+!.license
+!.readme.md
+!MVC/
+!MVCTest/
