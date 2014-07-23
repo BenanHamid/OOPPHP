@@ -69,6 +69,9 @@ GETDATABACK - programa za vuzstanovqvane na partition !
 
 Пренасочвам портовете да слуша и отвънка. Port forward APACHE - Правиш сървър с APACHE слагаш там песни за да слушаш
 през телефона си ! Ако не се получава заради IP-TO през HAMACHI !
-
+Super Hide IP;
+CARD SHARING - gledai kabelna s tova ne6to ! Ama ti trq net na satelitniq priemnik !!!
+http://www.pcwintech.com/simple-static-ip
+SUPER HIDE IP
 
 
