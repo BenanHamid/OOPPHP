@@ -76,5 +76,7 @@ SUPER HIDE IP
 http://portforward.com/help/setup_static_ip_address.htm
 Seven Remix XP - skin for WINXP;
 resource hacker - VIJDA KODA !
+http://saravananthirumuruganathan.wordpress.com/2010/05/01/how-to-read-the-source-code-of-chrome-and-firefox-extensions/
+-- READ EXTENSIONS SOURCE CODE
 
 
