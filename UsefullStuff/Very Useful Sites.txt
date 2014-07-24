@@ -78,5 +78,8 @@ Seven Remix XP - skin for WINXP;
 resource hacker - VIJDA KODA !
 http://saravananthirumuruganathan.wordpress.com/2010/05/01/how-to-read-the-source-code-of-chrome-and-firefox-extensions/
 -- READ EXTENSIONS SOURCE CODE
+http://en.wikipedia.org/wiki/Email_address_harvesting - HARVESTING BOT
+http://stackoverflow.com/questions/13576553/oracle-sql-foreign-key-is-also-primary-key-syntax - sql
+http://stackoverflow.com/questions/6602099/oracle-composite-primary-key-foreign-key-question - more sql
 
 
