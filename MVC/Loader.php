@@ -50,7 +50,7 @@ namespace myFramework;
 			if(!$path){
 				throw new \Exception('Invalid path '.$path);
 			}
-			//VIMP realpath не връща грешка при NULL !!! и за това правя проверката горе;
+			//VIMP realpath не връща грешка при NULL !!! и за това правя проверката горе и долу;
 			//връща грешка само когато файла го няма ! обаче ако го е имало файла и после го изтрия пак
 			//ще върне истина защото кешира !
 			$_path = realpath($path);
