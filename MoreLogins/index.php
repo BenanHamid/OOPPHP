@@ -17,7 +17,6 @@ if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] == true){
 		</p>
 		<input class="button" type="submit" name="submit" value="Login">
 	</form>
-	
 <?php }
 include 'footer.php';
 ?>
