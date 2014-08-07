@@ -112,3 +112,5 @@ http://meljeanbrook.com/books/the-guardian-series/guardian-demon/ - Demon Guardi
 http://vidmar.net/weblog/archive/2006/12/14/4283.aspx - tips and tricks for my phone
 http://www.benh.org/techblog/2006/08/w800i-tips-tricks-shortcuts-faq-and-resources/
 http://superuser.com/questions/11099/how-to-download-a-url-as-a-file - how to download FROM A LINK !
+https://www.digitalocean.com/community/tutorials/how-to-use-the-htaccess-file -  HTACCESS
+https://www.digitalocean.com/community/tutorials/how-to-set-up-mod_rewrite#Section%202 - MODE REWRITE
