@@ -10,7 +10,7 @@
 	<header>
 		<header id="in_header">
 			<h1>Best Loginzzzzz EU :D </h1>
-			<img src="img/logo.jpg" alt="cash"  />
+			<img src="../img/logo.jpg" alt="cash"  />
 		</header>
 	</header>
 	<!--Menu-->
@@ -18,7 +18,7 @@
 		<div id="menu">
 			<ul id="menu_bar">
 				<a href="index.php"><li>Homez</li></a>
-				<a href="#"><li>Forum</li></a>
+				<a href="asdasd.html"><li>Forum</li></a>
 				<a href="#"><li>News
 					<ul id="menu_bar_inside">
 						<a href="#"><li>Economics</li><a/>
