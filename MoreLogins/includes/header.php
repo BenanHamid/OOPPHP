@@ -10,7 +10,7 @@
 	<header>
 		<header id="in_header">
 			<h1>Best Loginzzzzz EU :D </h1>
-			<img src="../img/logo.jpg" alt="cash"  />
+			<img src="img/logo.jpg" alt="cash"  />
 		</header>
 	</header>
 	<!--Menu-->

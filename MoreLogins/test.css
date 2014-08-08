@@ -1,0 +1,12 @@
+/*
+--------- Footer --------- */
+/*
+--------- Social Footer --------- */
+.footer-social-inner ul li a{display:block;opacity:1;transition:color 0.5s,opacity 0.5s;}
+.footer-social-inner ul li a:hover{opacity:0.7;color:#115891;}
+.footer-social-inner .mobile{height:40px;padding-left:40px;
+background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -14px -979px;}
+.footer-social-inner .mobile:hover{background-position:-14px -1019px;}
+.footer-social-inner .twitter{height:36px;padding-left:62px;
+background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -228px -146px;}
+.footer-social-inner .twitter:hover{background-position:-228px -182px;}

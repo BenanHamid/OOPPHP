@@ -12,7 +12,7 @@
 		</div>
 		</article>
 		<aside>
-			<img src="../img/banner.jpg" alt="best_banner_eu" width="30%" height="30%"/>
+			<img src="img/banner.jpg" alt="best_banner_eu" width="30%" height="30%"/>
 		</aside>
 	</div>
 	<div class="clr"></div>

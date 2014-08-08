@@ -1,0 +1,1846 @@
+/*
+--------- Reset Styles --------- */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}ins{text-decoration:none}del{text-decoration:line-through}table{border-collapse:collapse;border-spacing:0}
+/*
+--------- HTML5 Styles --------- */
+header,footer,nav,article,section,hgroup,figure,figcaption,time,aside{display:block;margin:0;padding:0;} 
+body{background:#f4f4f4;font:100% Arial,Georgia,sans-serif;}
+body a,body a h2,body a h3,body a h4,body input{text-decoration:none;transition:color 0.5s/*,background-color 0.2s,background-image 0.2s;*/}
+body a:visited{transition:color 0.5s/*,background-color 0.2s,background-image 0.2s;*/}
+.button-1{height:35px;padding:0 15px;font:15px Arial;color:#252525;border:solid 1px #c7c7c7;border-radius:2px;background:-moz-linear-gradient(top,#fefefe,#eaeaea);background:-webkit-gradient(linear, 0% 0%, 0% 100%,#fefefe,#eaeaea);background:-webkit-linear-gradient(top,#fefefe,#eaeaea);background:-ms-linear-gradient(top,#fefefe,#eaeaea);background:-o-linear-gradient(top,#fefefe,#eaeaea);background:linear-gradient(top,#fefefe,#eaeaea);}
+.button-1:hover{color:#105388;box-shadow:0 2px 4px 0 rgba(0,0,0,0.18);-webkit-box-shadow:0 2px 7px 0 rgba(0,0,0,0.18)}
+a.button-1{display:block;height:33px;text-align:center;line-height:32px;}
+input.button-1{margin-left:0;padding-bottom:3px;cursor:pointer;}
+.no-cssgradients .button-1{background-image:url(http://m.netinfo.bg/vesti/images/button-1-bg.gif);background-repeat:repeat-x;background-position:top;}
+.button-2{height:19px;font:12px Arial;color:#252525;border:solid 1px #c7c7c7;border-radius:2px;text-shadow:1px 1px #fff;background:-moz-linear-gradient(top,#fefefe,#ebebeb);background:-webkit-gradient(linear, 0% 0%, 0% 100%,#fefefe,#ebebeb);background:-webkit-linear-gradient(top,#fefefe,#ebebeb);background:-ms-linear-gradient(top,#fefefe,#ebebeb);background:-o-linear-gradient(top,#fefefe,#ebebeb);background:linear-gradient(top,#fefefe,#ebebeb);}
+.button-2:hover{color:#105388;box-shadow:0 2px 4px 0 rgba(0,0,0,0.18);-webkit-box-shadow:0 2px 7px 0 rgba(0,0,0,0.18)}
+.button-3{padding-right:13px;font:12px Arial;color:#252525;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 100% -1533px;text-shadow:1px 1px #fff;}
+.button-3:hover{color:#105388;background-position:100% -1584px;}
+a.button-2{display:block;text-align:center;line-height:20px;}
+.no-cssgradients .button-2{background-image:url(http://m.netinfo.bg/vesti/images/button-2-bg.gif);background-repeat:repeat-x;background-position:top;}
+.reload-button{display:block;width:95px;height:35px;padding-left:37px;font:15px/36px Arial;color:#252525;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -4px -213px;}
+.reload-button:hover{position:relative;top:-2px;left:-4px;width:99px;height:43px;padding-left:41px;line-height:40px;color:#105388;background-position:0 -248px;}
+.reload-button-2{display:block;width:91px;height:43px;padding-left:39px;font:14px/40px Arial;color:#fff;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -451px;}
+.article-window .article-text .reload-button-2 {color:#fff}
+.reload-button-2:hover{background-position:0 -494px;}
+.arrow-right-button{display:block;width:95px;height:43px;padding-left:35px;font:14px/38px Arial;color:#252525;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -142px -432px;}
+.arrow-right-button:hover{color:#105388;background-position:-142px -475px;}
+.arrow-down-button{display:block;width:117px;height:43px;padding-left:21px;font:15px/38px Arial;color:#252525;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -142px -346px;}
+.arrow-down-button:hover{color:#105388;background-position:-142px -389px;}
+.tick-button{display:block;width:60px;height:34px;padding-left:33px;font:15px/34px Arial;color:#252525;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -4px -375px;}
+.tick-button:hover{position:relative;top:-2px;left:-4px;width:64px;height:42px;padding-left:37px;line-height:38px;color:#105388;background-position:0 -409px;}
+input.tick-button{width:93px;padding-bottom:3px;cursor:pointer;border:none;}
+input.tick-button:hover{width:101px;left:4px;padding-bottom:7px;padding-left:33px;}
+.input-field{width:255px;height:32px;padding:1px 9px 0;font:15px Arial;color:#666;border:solid 1px #115488;background:#fff;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.checkbox-field{width:16px;height:16px;margin:0;}
+.right-block-305{margin-bottom:20px;background:#f2f2f2;}
+.heading-1{margin-bottom:7px;}
+.heading-1 h2{font:24px/40px Georgia;color:#105388;}
+h2 .heading-1-link{font:24px/40px Georgia;color:#105388;}
+h3 .heading-1-link{font:18px Georgia;color:#252525;}
+h3 .heading-1-link:hover{color:#105388;}
+.heading-2-link{display:block;height:41px;padding:0 10px;font:24px/40px Georgia;color:#105388;border-bottom:solid 1px #cfcfcf;transition:background-color 0.5s;}
+.heading-2-link:hover{background:#e7e7e7;}
+.heading-2-link .heading-2-text{display:block;height:40px;}
+.heading-1-link .heading-1-site,.heading-2-link .heading-2-site{position:relative;top:-1px;margin-left:8px;padding-right:17px;font:12px Arial;color:#838383;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 100% -908px;text-shadow:1px 1px #fff;}
+.article-info-block .category-link{float:left;font:italic 12px Georgia;color:#105388;padding-left:1px}
+.article-info-block .time-posted{float:left;margin-right:9px;font:italic 11px Georgia;color:#838383;text-shadow:1px 1px #fff;}
+.article-info-block .seen{float:left;height:14px;margin-right:9px;padding-left:20px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -157px 3px;text-shadow:1px 1px #fff;}
+.article-info-block .commented{float:left;height:15px;margin-right:9px;padding-left:17px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -157px -13px;text-shadow:1px 1px #fff;}
+.article-info-block time{float:left;margin-right:9px;font:italic 11px Georgia;color:#838383;}
+.article-info-block .sep{float:left;padding:0 6px 0 7px;font:11px/16px Arial;color:#d0d0d0;}
+.more{width:285px;height:37px;margin:0 auto;overflow:hidden;}
+.scroll-shadow{position:absolute;left:0;width:305px;}
+.top-shadow{display:none;top:28px;height:9px;background:url(http://m.netinfo.bg/vesti/images/scroll-hover.png) repeat-x top;}
+.bottom-shadow{display:none;bottom:0;height:10px;background:url(http://m.netinfo.bg/vesti/images/scroll-bottom-hover.png) repeat-x top;}
+/*
+--------- Header --------- */
+.header{position:relative;height:80px;z-index:999999;}
+.header-wrapper{position:fixed;width:100%;height:80px;padding-bottom:20px;background:url(http://m.netinfo.bg/vesti/images/header-wrapper-shadow.png) repeat-x bottom;}
+.header-top{height:30px;background:#115891;}
+.header-top-inner{position:relative;width:980px;height:30px;margin:0 auto;}
+.netinfo-sites-list{float:left;height:30px;}
+.netinfo-sites-list li{float:left;padding:0 10px;}
+.netinfo-sites-list li a{font:11px/29px Arial;color:#97b3c7;text-shadow:1px 1px #0e4979;}
+.netinfo-sites-list li a:hover{color:#fff;}
+.netinfo-sites-list .netinfo-logo{padding-left:0;}
+.netinfo-logo a{display:block;position:relative;top:5px;width:37px;height:18px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 0;}
+.header-top-right{float:right;position:relative;z-index:16000001;}
+.site-features-list{float:left;border-left:solid 1px #29699c;}
+.site-features-list li{float:left;height:30px;border-right:solid 1px #0e4674;}
+.site-features-list li a{display:block;position:relative;height:30px;border-right:solid 1px #29699c;}
+/*.search a{width:33px;}
+.search a span{display:block;position:relative;top:3px;right:1px;width:32px;height:24px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -38px -2px;}
+.search a:hover span{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -38px -32px;}*/
+.log-in a{width:33px;border-left:solid 1px #0e4674;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -70px 0;}
+.logged-in a{padding:0 4px 0 8px;font:11px/29px Arial;color:#97b3c7;text-shadow:1px 1px #0e4979;overflow:hidden;}
+.logged-in img{float:right;position:relative;top:3px;margin-left:4px;border:solid 1px #0e4776;}
+.search a:hover{/*background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -37px -30px;*/}
+.search.selected a{border-right:solid 1px #fff;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -181px -574px;}
+.logged-in.selected a,.logged-in a:hover{color:#000;background:#f2f2f2;text-shadow:none;}
+.logged-in.selected a{border-right:solid 1px #fff;}
+.logged-in.selected a img{border:solid 1px #d2d2d2;}
+.log-in a:hover{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -70px -30px;}
+.log-in.selected a{border-right:solid 1px #fff;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -214px -574px;}
+.make-home-page{display:none;}
+.make-home-page a{position:relative;width:33px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -103px 0;}
+.make-home-page span{display:none;position:absolute;right:1px;bottom:-32px;height:27px;padding:0 16px;white-space:nowrap;font:12px/28px Arial;color:#252525;border:solid 1px #c7c7c7;border-radius:2px;z-index:1200000;}
+.cssgradients .make-home-page span{background:-moz-linear-gradient(top,#fff,#ebebeb);background:-webkit-gradient(linear, 0% 0%, 0% 100%,#fff,#ebebeb);background:-webkit-linear-gradient(top,#fff,#ebebeb);background:-ms-linear-gradient(top,#fff,#ebebeb);background:-o-linear-gradient(top,#fff,#ebebeb);background:linear-gradient(top,#fff,#ebebeb);}
+.no-cssgradients .make-home-page span{background:url(http://m.netinfo.bg/vesti/images/make-home-page-info.gif) repeat-x top;}
+.make-home-page a:hover{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -103px -30px;}
+.make-home-page a:hover span{display:block;}
+.day-separator{display:block;height:40px;margin-top:14px;padding-left:13px;font:italic 24px/35px Georgia;color:#838383;background:#f2f2f2;}
+/*
+--------- Search Block --------- */
+.search-block{/*display:none;*/float:left;/*width:241px;*/margin-right:2px;}
+.search-block-form p{overflow:hidden;height:30px;}
+.search-field.blur{display:none;float:left;position:relative;top:3px;width:0;height:22px;padding:0;font:13px Arial;color:#000;border:none;box-shadow:none;}
+.search-block .search-button{float:right;display:block;position:relative;top:3px;width:32px;height:24px;padding:0;cursor:pointer;border:none;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -38px -2px;}
+.search-block .search-button-hover{background-position:-38px -32px;}
+/* 
+.search-block{display:none;position:absolute;top:30px;left:-402px;width:457px;height:78px;padding-bottom:30px;background:url(http://m.netinfo.bg/vesti/images/search-block-bottom.png) no-repeat bottom;z-index:900000;}
+.search-block form{height:78px;background:url(http://m.netinfo.bg/vesti/images/search-block-middle.png) repeat-y top;}
+.search-block form p{position:relative;top:23px;width:376px;height:35px;margin:0 auto;}
+.search-field{float:left;}
+.search-field.blur{height:34px;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.no-boxshadow .search-field{background:#fff url(http://m.netinfo.bg/vesti/images/search-field-top.gif) repeat-x top;}
+.search-button{float:right;}
+.no-cssgradients .search-button{background:url(http://m.netinfo.bg/vesti/images/search-button.gif) repeat-x top;}
+*/
+
+/*
+--------- Log In Block --------- */
+.log-in-block{display:none;position:absolute;top:30px;right:-15px;width:348px;padding-bottom:30px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-bottom.png) no-repeat bottom;z-index:1000000;}
+.log-in-block-inner{padding:13px 0 14px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-middle.png) repeat-y top;}
+.log-in-block-title{position:relative;left:39px;margin-bottom:1px;font:15px Arial;color:#666;}
+.log-in-block form{width:275px;margin:0 auto;}
+.log-in-block form p{padding:8px 0;overflow:hidden;}
+form .error-notice{display:block;padding:6px 5px 7px;text-align:center;font:12px Arial;border:solid 1px #e8e8a0;background:#ffffcc;}
+.log-in-field{width:255px;height:32px;padding:1px 9px 0;font:13px Arial;color:#666;border:solid 1px #115488;background:#fff;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.log-in-field.blur{height:34px;padding-top:0;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.no-boxshadow .log-in-field{background:#fff url(http://m.netinfo.bg/vesti/images/search-field-top.gif) repeat-x top;}
+#remember-me,#remember-me-2{float:left;}
+.log-in-block form p label{float:left;position:relative;top:1px;margin-left:5px;font:12px Arial;color:#252525;}
+.log-in-button{float:left;margin-right:15px;padding:0 21px;}
+.forgotten-password,.registration{position:relative;top:-3px;font:12px Arial;color:#105388;}
+.forgotten-password{position:relative;top:-3px;}
+.forgotten-password:hover,.registration:hover{text-decoration:underline;}
+.log-in-abv{display:block;width:211px;height:41px;margin:9px auto 0;padding-left:69px;font:15px/43px Arial;color:#fff;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -60px;text-shadow:1px 1px #207502;}
+.log-in-abv:hover{text-decoration:underline;}
+/*
+--------- Logged In Block --------- */
+.logged-in-block{display:none;position:absolute;top:30px;right:-15px;width:348px;padding-bottom:30px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-bottom.png) no-repeat bottom;z-index:1000000;}
+.logged-in-block-inner{padding:18px 0 17px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-middle.png) repeat-y top;}
+.logged-in-block-middle{display:block;width:275px;margin:0 auto;}
+.logged-in-block-middle div{clear:both;margin-bottom:18px;overflow:hidden;}
+.logged-in-picture{float:left;margin-right:14px;}
+.logged-in-name,.logged-in-email{position:relative;top:21px;font:13px Arial;color:#666;}
+.logged-in-email{top:17px;}
+.log-out-button{float:left;width:50px;margin-right:12px;}
+.logged-in-profile{position:relative;top:7px;font:12px Arial;color:#105388;}
+.logged-in-profile:hover{text-decoration:underline;}
+.header-main{position:relative;height:49px;border-bottom:solid 1px #c8c9ca;background:#fff;}
+.header-main-inner{position:relative;width:980px;height:49px;margin:0 auto;}
+.header-main-inner h1{float:left;position:relative;top:14px;}
+.vesti-logo{display:block;width:121px;height:25px;}
+/*
+--------- Navigation --------- */
+.nav-main{float:right;height:49px;border-right:solid 1px #d9d9d9;}
+.nav-main-li-1{float:left;height:49px;border-left:solid 1px #d9d9d9;}
+.nav-main-span-1{display:block;height:49px;}
+.nav-main-a-1{display:block;height:49px;padding:0 15px;font:14px/50px Arial;color:#105388;}
+.nav-main-li-1.active,.nav-main-li-1:hover{position:relative;/*margin:0 -9px;padding-left:10px;border-left:none;*//*background:url(http://m.netinfo.bg/vesti/images/nav-li-left.png) repeat-y 1px 0;*/z-index:15;}
+.nav-main-li-1.active,.nav-main-li-1:hover{z-index:1600000;}
+.nav-main-li-1.active .nav-main-span-1,.nav-main-li-1:hover .nav-main-span-1{/*padding-right:9px;background:url(http://m.netinfo.bg/vesti/images/nav-span-right.png) repeat-y right;*/}
+.nav-main-li-1.active .nav-main-a-1,.nav-main-li-1:hover .nav-main-a-1{position:relative;/*padding:0 12px;color:#252525;border-right:solid 1px #fff;border-left:solid 1px #cbcccd;*/background:#fff;text-shadow:1px 1px #f9f9f9;}
+.nav-main-li-1.weather.active,.nav-main-li-1.weather:hover{margin-right:-17px;}
+.nav-main-li-1.weather.active .nav-main-span-1,.nav-main-li-1.weather:hover .nav-main-span-1{padding-right:17px;background:url(http://m.netinfo.bg/vesti/images/nav-weather-span-right.png) repeat-y right;}
+.nav-main-li-1:hover{height:49px;}
+.nav-main-li-1:hover .nav-main-span-1{height:49px;}
+.nav-main-li-1:hover .nav-main-a-1{height:49px;}
+.nav-main-li-1.active{height:50px;}
+.nav-main-li-1.active .nav-main-span-1{height:50px;}
+.nav-main-li-1.active .nav-main-a-1{height:51px;}
+.nav-main-li-1.weather .nav-main-span-1{overflow:hidden;}
+.nav-main-li-1.weather .nav-main-a-1{text-align:center;width:72px;/*font:20px/46px Georgia;*/color:#252525;}
+.nav-main-li-1.weather .nav-main-a-1 img{float:left;padding-top:8px;}
+.nav-main-li-1.weather.active .nav-main-a-1{font:14px/50px Arial;}
+.nav-main-li-1.weather .nav-main-a-1-weather{color:#105388;}
+.nav-main-li-1.weather.active .nav-main-a-1-weather{color:#252525;}
+.nav-main-li-1.selected{border-bottom:solid 1px #115891;background:#fff;}
+/*.nav-main-li-1.selected:hover{margin:0;padding-left:0;border-bottom:none;border-left:solid 1px #d9d9d9;background:#f2f2f2;}
+.nav-main-li-1.selected.first:hover{border-bottom:solid 1px #115891;background:#fff;}*/
+.nav-main-li-1.selected .nav-main-a-1{color:#252525;}
+.nav-main-li-1.selected:hover .nav-main-span-1{padding-right:0;}
+/*.nav-main-li-1.selected:hover .nav-main-a-1{color:#105388;border-color:#f2f2f2;}*/
+/*.nav-main-li-1.selected.first:hover .nav-main-a-1{color:#252525;}*/
+.nav-main-ul-2{display:none;margin-bottom:30px;padding-bottom:16px;text-align:center;border-bottom:solid 1px #d3d3d3;overflow:hidden;}
+.nav-main-li-2{display:inline;float:left;}
+.nav-main-a-2{font:14px Arial;color:#105388;text-shadow:1px 1px #fff;}
+.nav-main-li-2 .sep{margin:0 15px 0 16px;font:16px Arial;color:#d3d3d3;}
+.nav-main-a-2:hover{text-decoration:underline;}
+.nav-main-ul-3{display:none;width:980px;/*height:142px;*/margin:0 auto;}
+.nav-main-ul-3.nav-main-ul-3-add{float:left;width:815px;}
+.nav-main-li-3{float:left;width:230px;height:52px;margin-left:45px;/*overflow:hidden;*/}
+.nav-main-ul-3-last{padding-top:17px;}
+.nav-main-ul-3-last .nav-main-li-3{width:284px;height:auto;margin:0 64px 0 0;}
+.nav-main-ul-3-last .nav-main-li-3.third{margin:0;padding-top:0;border-top:none;}
+.nav-main-ul-3-last .nav-main-li-3 li{display:block;}
+.nav-main-ul-3-last .nav-main-li-3 li .nav-main-a-3{display:block;height:52px;margin-bottom:6px;padding-bottom:6px;border-bottom:solid 1px #cfcfcf;transition:border-color 0.5s;}
+.nav-main-ul-3-last .nav-main-li-3 li .nav-main-a-3:hover{border-bottom:solid 1px #105388;}
+.nav-main-ul-2-media{margin-bottom:0;border-bottom:none;}
+.nav-main-ul-3-media .nav-main-li-3{width:180px;height:auto;margin:0 20px 0 0;border:none;}
+.nav-main-ul-3-media .nav-main-li-3.last{margin:0;padding:0;border:none;}
+.nav-main-ul-3-media .nav-main-a-3{display:block;position:relative;width:178px;height:173px;padding:1px;border-bottom:solid 1px #f2f2f2;background:#f2f2f2;transition:border-color 0.5s,background-color 0.5s;}
+.nav-main-ul-3-media .nav-main-a-3:hover{border-bottom:solid 1px #105388;background:#e7e7e7;}
+.nav-main-ul-3-media .nav-main-li-3 .nav-main-a-3 img{float:none;margin:0 0 1px 0;border:none;}
+.nav-main-ul-3-media .nav-main-li-3 .nav-main-span-3{top:0;padding-left:5px;}
+.nav-main-ul-3-media .nav-main-li-3 .time-posted{padding-left:5px;}
+.nav-main-ul-3-media .nav-main-a-3 .video-icon{position:absolute;top:1px;left:1px;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -337px;}
+.nav-main-ul-3-media .nav-main-a-3:hover .video-icon{background-position:-35px -337px;}
+.nav-main-ul-3-media .nav-main-a-3 .photo-icon{position:absolute;top:1px;left:1px;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -70px -337px;}
+.nav-main-ul-3-media .nav-main-a-3:hover .photo-icon{background-position:-105px -337px;}
+.nav-main-ul-3-add .nav-main-li-3{width:375px;height:auto;margin-left:30px;}
+.nav-main-ul-3-add .nav-main-li-3 img{display:none;}
+.nav-main-ul-3-add .nav-main-li-3 li{margin-bottom:14px;padding-bottom:5px;border-bottom:solid 1px #cfcfcf;}
+.nav-main-ul-3-add .nav-main-li-3 li nav-main-a-3{display:block;height:16px;overflow:hidden;}
+.nav-main-li-3.main{width:430px;height:142px;margin-left:0;margin-bottom:0;padding-left:0;padding-bottom:0;border-left:none;border-bottom:none;}
+.nav-main-li-3.main .nav-main-a-3{display:block;width:431px;height:142px;}
+.nav-main-ul-3-no-add .nav-main-li-3{height:auto;}
+.nav-main-ul-3-no-add .nav-main-li-3 li{display:block;height:52px;}
+.nav-main-ul-3-no-add .nav-main-li-3 li.first{margin-bottom:14px;padding-bottom:14px;border-bottom:solid 1px #cfcfcf;}
+.nav-main-ul-3-add .nav-main-li-3.main{width:410px;}
+.nav-main-ul-3-add .nav-main-li-3.main .nav-main-a-3{width:410px;}
+.nav-main-li-3.main .nav-main-a-3 img{display:block;}
+.nav-main-li-3 .nav-main-a-3 img{border:solid 1px #fff;transition:border-color 0.5s;}
+.nav-main-li-3.third,.nav-main-li-3.last{margin-top:14px;padding-top:14px;border-top:solid 1px #cfcfcf;}
+.nav-main-ul-3-add .nav-main-li-3.third,.nav-main-ul-3-add .nav-main-li-3.last{margin-top:0;padding-top:0;border-top:none;}
+.nav-main-li-3 img{float:left;margin-right:14px;}
+.nav-main-span-3{display:block;position:relative;top:-3px;margin-bottom:2px;font:13px/16px Georgia;color:#252525;}
+.nav-main-li-3.main .nav-main-span-3{top:-3px;margin-bottom:7px;font-size:15px;}
+.nav-main-span-3-text{display:block;margin-bottom:5px;font:13px Arial;color:#838383;}
+.nav-main-span-3-category{font:italic 12px Georgia;color:#105388;}
+.nav-main-ul-3 .time-posted{display:block;font:italic 11px Georgia;color:#838383;}
+.nav-main-ul-3.nav-main-ul-3-add .time-posted{display:none;}
+.nav-main-li-3.main .time-posted{display:block;}
+.nav-main-a-3:hover .nav-main-span-3{color:#105388;}
+.nav-main-a-3:hover img{border:solid 1px #105388;}
+a.nav-main-more-button{display:none;float:right;margin-top:23px;}
+.nav-main-ul-3-add a.nav-main-more-button{margin-top:4px;}
+.nav-main-ul-3-last a.nav-main-more-button,.nav-main-ul-3-media a.nav-main-more-button{margin-top:11px;}
+.nav-main-ad-block{display:none;float:right;width:165px;}
+.nav-main-holder .nav-main-ul-2,.nav-main-holder .nav-main-ul-3,.nav-main-holder a.nav-main-more-button,.nav-main-holder .nav-main-ad-block{display:block;}
+/*
+--------- Weather Block --------- */
+.weather-block{display:none;position:absolute;top:50px;right:-16px;width:262px;padding-bottom:23px;background:url(http://m.netinfo.bg/vesti/images/weather-block-bottom.png) no-repeat bottom;z-index:1100000;}
+.weather-block-inner-1{padding:1px 0 0;background:url(http://m.netinfo.bg/vesti/images/weather-block-middle.png) repeat-y top;}
+.weather-block-inner-2{width:226px;margin:0 auto;overflow:hidden;}
+.weather-block-inner-3{width:452px;}
+.weather-block-middle-main{float:left;position:relative;width:206px;margin:0 auto;padding:12px 10px 25px;background:#fff;}
+.weather-link{display:block;width:206px;margin-bottom:10px;}
+.weather-city{display:block;margin-bottom:2px;font:bold 16px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.weather-updated{display:block;margin-bottom:7px;font:12px Arial;color:#666;text-shadow:1px 1px #fff;}
+.weather-image{float:left;margin-right:16px;padding-left:6px;}
+.weather-temperature{position:relative;top:-5px;font:56px Georgia;color:#000;text-shadow:1px 1px #fff;}
+.weather-feels{display:block;position:relative;top:-5px;font:12px Arial;color:#666;text-shadow:1px 1px #fff;}
+.weather-condition{padding-bottom:18px;text-align:center;font:13px Georgia;color:#252525;border-bottom:solid 1px #d0d1d2;text-shadow:1px 1px #fff;}
+.weather-wind-info{height:35px;/*padding-left:8px;*/border-top:solid 1px #fff;}
+.weather-wind-title{float:left;margin-right:4px;font:12px/34px Arial;color:#484848;text-shadow:1px 1px #fbfbfb;}
+.weather-wind-direction{float:left;position:relative;top:6px;width:20px;height:24px;margin-right:5px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 0 0;}
+.weather-wind-direction.N{background-position:0 0;}
+.weather-wind-direction.NE{background-position:0 -27px;}
+.weather-wind-direction.E{background-position:0 -50px;}
+.weather-wind-direction.SE{background-position:0 -74px;}
+.weather-wind-direction.S{background-position:0 -103px;}
+.weather-wind-direction.SW{background-position:0 -131px;}
+.weather-wind-direction.W{background-position:0 -154px;}
+.weather-wind-direction.NW{background-position:0 -180px;}
+.weather-wind-speed{float:left;margin-right:9px;font:bold 14px/32px Arial;color:#000;text-shadow:1px 1px #fff;}
+.weather-wind-condition{float:left;font:12px/34px Arial;color:#484848;text-shadow:1px 1px #fbfbfb;}
+.weather-settings{position:absolute;top:15px;right:10px;width:16px;height:16px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -141px 0;}
+.weather-settings:hover{height:21px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -141px -16px;}
+.weather-full{position:absolute;bottom:0;left:0;width:226px;height:25px;text-align:center;font:12px/24px Arial;color:#105388;background:#f2f2f2;}
+.weather-full:hover{text-decoration:underline;}
+.weather-block-middle-search{display:none;float:left;position:relative;width:206px;height:198px;margin:0 auto;padding:14px 10px 28px;border-bottom:solid 1px #fff;background:#fff;}
+.search-city-title{display:block;margin-bottom:9px;font:14px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.weather-block-middle-search form p{position:relative;/*overflow:hidden;*/}
+.weather-block-middle-search form p.last{position:absolute;bottom:0;height:43px;/*margin-top:12px;*/}
+/*.search-city-field.blur{height:34px;padding-top:0;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;box-shadow:inset 0 1px 0 0 #e6e6e6;}*/
+.search-city-field{width:186px;height:34px;font:14px Arial;color:#000;}
+.search-city-field::-ms-clear{display:none;}
+.cancel-search-city{position:absolute;top:12px;right:5px;width:14px;height:14px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -136px -39px;}
+.search-city-result-list{padding:1px 8px 6px 12px;background:#d9d9d9;}
+.search-city-result-list li{display:block;padding:2px 0;}
+.search-city-result-list li a{font:12px Arial;color:#000;}
+.search-city-result-list li a:hover{text-decoration:none;}
+.search-city-result-list li a strong{font-weight:bold;}
+.cancel-city{float:left;position:relative;top:9px;height:16px;padding-left:20px;font:15px/18px Arial;color:#000;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -4px -209px;text-shadow:1px 1px #fafafa;}
+.cancel-city:hover{height:19px;color:#216293;background-position:-4px -225px;}
+.save-city{float:right;}
+/*
+--------- Naigation Main Holder --------- */
+.nav-main-holder{display:none;position:absolute;top:49px;left:0;width:100%;height:304px;background:url(http://m.netinfo.bg/vesti/images/nav-main-holder_.png) repeat-x top;z-index:1100000;}
+.nav-main-holder-inner{width:980px;margin:0 auto;padding-top:16px;/*text-align:center;*/}
+.nav-main-holder .nav-main-span-1{display:none;}
+/*
+--------- Container --------- */
+.container{position:relative;width:980px;margin:30px auto 0;padding:14px 10px 60px;background:#fff;z-index:10;}
+.container-home{margin-top:0;padding-top:30px;background:#fff url(http://m.netinfo.bg/vesti/images/container.gif) repeat-x top;}
+.container-category,.container-multimedia,.container-2{padding-top:0;}
+.inner-page-header{height:50px;margin-bottom:20px;border-bottom:solid 1px #e1e1e1;}
+.inner-page-header h1{float:left;font:24px/49px Georgia;color:#105388;}
+/*
+--------- Left Block --------- */
+.content-left{float:left;width:655px;}
+/*
+--------- Main News Block --------- */
+.main-news{margin-bottom:18px;padding:1px 1px 0 1px;border:solid 1px #cfcfcf;}
+.main-news-first{position:relative;}
+.main-news-first .img-link{display:block;width:651px;height:396px;}
+.main-news-first h2 a{position:absolute;bottom:0;left:0;width:651px;height:249px;background:url(http://m.netinfo.bg/vesti/images/news-main-shadow-1.png) repeat-x top;}
+.main-news-first h2 a span{position:absolute;bottom:20px;left:0;width:607px;/*height:70px;*/padding:0 22px;font:bold 30px Georgia;color:#fff;overflow:hidden;text-shadow:-1px 0 #3c3d3c,0 1px #3c3d3c,0 0 #3c3d3c,0 0 #3c3d3c;}
+.main-news-articles ul{width:625px;height:176px;margin:0 auto;}
+.main-news-articles li{float:left;position:relative;width:125px;height:176px;border-bottom:solid 1px #cfcfcf;transition:border-color 0.5s ease 0s;}
+.main-news-articles li.selected{border-bottom:solid 1px #115891;}
+.main-news-articles li:hover{cursor:pointer;}
+.main-news-articles li .img-link{display:block;width:107px;height:66px;padding:19px 9px 0;}
+.main-news-articles li .img-link span{display:block;width:107px;height:66px;cursor:pointer;}
+.main-news-articles li .img-link img{border:solid 1px #fff;transition:border-color 0.5s ease 0s;}
+/*.main-news-articles li.selected .img-link span{border:solid 1px #115891;}*/
+.main-news-articles li.selected .img-link img{border:solid 1px #115891;}
+.main-news-articles li h2 a{display:block;width:107px;height:83px;padding:7px 9px 0 9px;}
+.main-news-articles li h2 a span{display:block;height:82px;cursor:pointer;font:13px/16px Georgia;color:#252525;overflow:hidden;}
+.main-news-articles li.selected h2 a span{color:#105388;}
+.main-news-bullet{position:absolute;top:-10px;left:54px;width:22px;height:11px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -150px -39px;}
+/*
+--------- Top News Block --------- */
+.top-news-block{margin-bottom:18px;}
+.top-news-block .heading-1{height:40px;}
+.top-news-block .heading-1 h2{float:left;color:#3a3a3a;}
+.top-news-view-toggle{float:right;position:relative;top:11px;}
+.top-news-view-toggle a{float:left;width:54px;height:21px;padding-left:24px;font:12px/22px Arial;color:#3a3a3a;text-shadow:1px 1px #fff;}
+.top-news-view-toggle a:hover{position:relative;top:-4px;height:28px;line-height:30px;color:#105388;}
+.blocks-view-toggle{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -130px;}
+.blocks-view-toggle.selected,.blocks-view-toggle.selected:hover{top:0;height:21px;margin-left:0;padding-left:24px;cursor:default;line-height:22px;color:#5a5a5a;background-position:0 -105px;}
+.blocks-view-toggle:hover{margin-left:-3px;padding-left:27px;background-position:0 -180px;}
+.lists-view-toggle{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -79px -105px;}
+.lists-view-toggle.selected,.lists-view-toggle.selected:hover{top:0;width:54px;height:21px;margin-right:0;cursor:default;line-height:22px;color:#5a5a5a;background-position:-79px -130px;}
+.lists-view-toggle:hover{width:57px;margin-right:-3px;background-position:-82px -151px;}
+.top-news{float:left;position:relative;width:205px;height:210px;margin:0 0 14px 10px;padding:1px 2px 5px 4px;overflow:hidden;transition:background-image 0.3s ease-out 0s;}
+.top-news.first{left:-4px;margin-left:0;}
+.top-news.third{left:4px;}
+.top-news.selected .top-news:hover{/*background:url(http://m.netinfo.bg/vesti/images/top-news.png) no-repeat;*/}
+.top-news-main{display:block;position:relative;top:0;left:0;width:201px;height:206px;padding:1px;border:solid 1px #d0d0d0;background:#fff;/*z-index:1;*/}
+.top-news-main .img-link{display:block;font-size:0;}
+.top-news-main h3{height:66px;height:58px;padding:5px 10px 3px;font:15px/19px Georgia;color:#252525;background:#f0f0f0;text-shadow:1px 1px #fff;overflow:hidden;}
+.news-article-list{position:absolute;bottom:6px;left:4px;width:185px;height:0;background:#105388;overflow:hidden;opacity:0;transition:height 0.3s ease-out 0s;}
+.top-news:hover .news-article-list{height:198px;padding:10px 10px 0;opacity:1;}
+.news-article-list h3{max-height:54px;margin-bottom:8px;font:15px/17px Georgia;color:#fff;text-shadow:1px 1px #0e4b7c;overflow:hidden;}
+.news-article-list p{height:99px;font:13px Arial;color:#a3c0e3;text-shadow:1px 1px #10548a;overflow:hidden;}
+.news-article-list .article-info-block{/*position:absolute;bottom:7px;left:10px;*/margin-top:5px;}
+.news-article-list .article-info-block .category-link{display:block;float:none;position:relative;color:#fff;}
+.top-news.selected .news-article-list .category-link{z-index:2;}
+.news-article-list .article-info-block .category-link:hover{text-decoration:underline;}
+.news-article-list .article-info-block .time-posted{display:block;float:none;margin:0;color:#a3c0e3;text-shadow:1px 1px #10548b;}
+.news-article-list .article-info-block .sep,.news-article-list .article-info-block .seen,.news-article-list .article-info-block .commented{display:none;}
+.top-news-content.list .news-article-list .barcode {float:right !important; margin-top: 7px;}
+/* .sponsored .news-article-list {height:0; bottom:6px;left:4px; background: #FFFEF1; border-top:solid 1px #b4b4b4; border-bottom:solid 1px #0e5993; border-left:solid 1px #b4b4b4; border-right:solid 1px #b4b4b4; overflow: hidden; position: absolute; top:0; transition:height 0.3s ease-out 0s !important; bottom:0; width: 183px; } */ 
+.sponsored .news-article-list {position:absolute; background: #FFFEF1; bottom:6px !important;left:5px;width:183px; height:0; background:#FFFEF1;overflow:hidden;opacity:0;transition:height 0.3s ease-out 0s; } 
+  
+ 
+.top-news.sponsored .news-article-list h3{color:#105388;text-shadow:none;}
+.top-news.sponsored .news-article-list p{color:#838383;text-shadow:none;}
+.top-news.sponsored .news-article-list .article-info-block .category-link{color:#105388;}
+.top-news.sponsored .news-article-list .article-info-block .time-posted{color:#838383;text-shadow:none;}
+.top-news-content.list .top-news{float:none;left:0;width:auto;height:auto;margin:0;}
+.top-news-content.list .top-news.selected{background:none;}
+.top-news-content.list .top-news-main{display:none;}
+.top-news-content.list .news-article-list{display:block;position:static;top:0;left:0;width:auto;height:auto;padding:14px 0;border-bottom:solid 1px #d0d0d0;background:none;overflow:hidden;transition:border-color 0.5s;}
+.top-news-content.list .news-article-list{opacity:1;}
+.top-news-content.list .news-article-list.first{padding-top:0;}
+.top-news-content.list .news-article-list.last{border-bottom:none;}
+.container-category .top-news-content.list .news-article-list.last{border-bottom:solid 1px #d0d0d0;}
+.top-news-content.list .news-article-list img{float:left;margin-right:20px;}
+.top-news-content.list .news-article-list img[alt="платена публикация"] { float: none; margin-left: 5px; }
+.top-news-content.list .news-article-list img[align="right"] { float: right; margin-left: 5px; }
+/*.top-news-content.list .news-article-list .img-link img{border:solid 1px #fff;}*/
+.top-news-content.list .news-article-list h3{position:relative;top:-4px;/*margin:4px 0 6px;*/margin-bottom:2px;font:bold 16px/19px Georgia;color:#252525;text-shadow:none;/*padding-left:20px;*/overflow:hidden;}
+.top-news-content.list .news-article-list p{/*height:32px;*/height:auto;margin-bottom:7px;/*padding-left:20px;*/font:13px Arial;color:#838383;overflow:hidden;text-shadow:none;}
+.top-news-content.list .news-article-list .article-info-block{position:static;top:0;left:0;/*padding-left:20px;*/overflow:hidden;}
+.top-news-content.list .news-article-list .article-info-block .category-link{float:left;position:static;color:#105388;}
+.top-news-content.list .news-article-list .article-info-block .time-posted{float:left;margin-right:9px;line-height:16px;text-shadow:none;color:#838383;}
+.top-news-content.list .news-article-list .article-info-block .sep,.top-news-content.list .news-article-list .article-info-block .seen,.top-news-content.list .news-article-list .article-info-block .commented{display:block;}
+.top-news-content.list .top-news.sponsored .news-article-list{width:auto;height:auto;border:none;border-bottom:solid 1px #d0d0d0;background:#fffef1;}
+.top-news-content.list .top-news.sponsored .news-article-list h3 a{color:#252525;text-shadow:none;}
+.top-news-content.list .news-article-list:hover,.top-news-content.list .top-news.sponsored .news-article-list:hover{border-bottom:solid 1px #105388;}
+.top-news-content.list .news-article-list.last:hover,.top-news-content.list .top-news.sponsored.last .news-article-list:hover{border-bottom:none;}
+.container-category .top-news-content.list .news-article-list.last:hover,.top-news-content.list .top-news.sponsored.last .news-article-list:hover{border-bottom:solid 1px #105388;}
+.top-news-content.list .news-article-list:hover h3,.top-news-content.list .top-news.sponsored .news-article-list:hover h3{color:#105388;}
+.top-news-more{margin:11px auto 0;}
+/*
+--------- Accent and Commentary Block --------- */
+.accent-commentary-block{margin-bottom:18px;padding-bottom:10px;border-bottom:solid 1px #d5d5d6;overflow:hidden;}
+.accent-commentary-content{position:relative;height:246px;margin-bottom:14px;overflow:hidden;}
+.accent-commentary-wrapper{display:none;position:absolute;top:0px;/*left:-21px;*/width:696px;height:246px;}
+.accent-commentary-wrapper.selected{display:block;}
+.accent-commentary{float:left;width:131px;height:246px;margin-right:21px;padding-right:21px;border-right:solid 1px #d5d5d5;}
+.accent-commentary .img-link{display:block;position:relative;height:132px;margin-bottom:3px;}
+.accent-commentary .img-link img{border:solid 1px #fff;transition:border-color 0.5s;}
+.accent-commentary:hover .img-link img{border:solid 1px #105388;}
+.accent-commentary .video{position:absolute;top:51px;left:51px;width:27px;height:27px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -18px;}
+.accent-commentary-category{font:italic 12px Georgia;color:#105388;padding-left:1px}
+.accent-commentary-category:hover{text-decoration:underline;}
+.accent-commentary h3{height:89px;margin-top:2px;font:15px/18px Georgia;color:#252525;overflow:hidden;}
+.accent-commentary:hover h3{color:#105388;}
+.accent-commentary-pager{float:left;position:relative;left:50%;}
+.accent-commentary-pager li{float:left;position:relative;right:50%;padding:0 5px;}
+.accent-commentary-pager li a{display:block;width:18px;height:13px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -160px -105px;}
+.accent-commentary-pager li a:hover{height:17px;background-position:-178px -105px;}
+.accent-commentary-pager li .selected,.accent-commentary-pager li .selected:hover{height:17px;background-position:-196px -105px;}
+/*
+--------- Car Market Block --------- */
+.carmarket-items-block{clear:both;overflow:hidden;padding-bottom:10px;}
+.carmarket-items-content{height:201px;    margin-bottom:8px;    overflow:hidden;    position:relative;}
+.carmarket-items-wrapper{display:none;    height:190px;    position:absolute;    top:0;    width:655px;}
+.carmarket-items-wrapper.selected{display:block;}
+.carmarket-item{float:left; height:201px; margin-left:17px; width:207px;}
+.carmarket-item.first{margin-left:0;}
+.carmarket-item .img-link{display:block;font-size:0;margin-bottom:13px;}
+.carmarket-item .img-link img{border:solid 1px #fff;transition:border-color 0.5s;}
+.carmarket-item .img-link:hover img{border:solid 1px #105388;}
+.carmarket-item-carmark{font:bold 14px Georgia;color:#252525;padding-bottom:5px;display:block;}
+.carmarket-item-carmark:hover{color:#105388;}
+.carmarket-item-year{color:#838383; font:13px Arial;padding-bottom:2px;}
+.carmarket-item-price{font:14px Georgia;color:#105388;}
+.carmarket-items-pager{float:left;position:relative;left:50%;}
+.carmarket-items-pager li{float:left;position:relative;right:50%;padding:0 5px;}
+.carmarket-items-pager li a{display:block;width:18px;height:13px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -160px -105px;}
+.carmarket-items-pager li a:hover{height:17px;background-position:-178px -105px;}
+.carmarket-items-pager li .selected,.carmarket-items-pager li .selected:hover{height:17px;background-position:-196px -105px;}
+/*
+--------- Sravni Block --------- */
+.sravni-items-block{    overflow:hidden;    padding-bottom:10px;}
+.sravni-items-content{height:221px;    margin-bottom:7px;    overflow:hidden;    position:relative;}
+.sravni-items-wrapper{display:none;    height:221px;    position:absolute;    top:0;    width:700px;}
+.sravni-items-wrapper.selected{display:block;}
+.sravni-item{float:left; height:221px; margin-right:45px; width:130px;}
+.sravni-item .img-link {margin-bottom:14px;border:1px solid #d3d3d3;display:block;transition:border-color 0.5s;}
+.sravni-item .img-link:hover{border:1px solid #105388;}
+.sravni-item .img-link img{display:block;}
+.sravni-item-model{font:bold 14px Georgia;color:#252525;padding-bottom:5px;display:block;}
+.sravni-item-model:hover{color:#105388;}
+.sravni-item-price{font:14px Georgia;color:#105388;}
+.sravni-items-pager{float:left;position:relative;left:50%;}
+.sravni-items-pager li{float:left;position:relative;right:50%;padding:0 5px;}
+.sravni-items-pager li a{display:block;width:18px;height:13px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -160px -105px;}
+.sravni-items-pager li a:hover{height:17px;background-position:-178px -105px;}
+.sravni-items-pager li .selected,.sravni-items-pager li .selected:hover{height:17px;background-position:-196px -105px;}
+/*
+--------- Darik News Block --------- */
+.darik-items-block{overflow:hidden;padding-bottom:20px;margin:20px 0;width:655px;border-bottom:1px solid #D5D5D5}
+.darik-items-content{height:261px;margin-bottom:14px;overflow:hidden;position:relative;}
+.darik-items-wrapper{display:none;height:261px;position:absolute;top:0;width:696px;}
+.darik-items-wrapper.selected{display:block;}
+.darik-item .img-link {margin-bottom:14px;display:block;height:210px}
+.darik-item{float:left; height:261px; margin-right:21px; padding-right:21px; border-right:1px solid #D5D5D5;width:131px;}
+.darik-item-title{font:15px/18px Georgia;color:#252525;padding:10px 0 5px 0;display:block;max-height:68px;overflow:hidden}
+.darik-item .img-link:hover .darik-item-title {color:#105388;}
+.darik-item .img-link:hover img{border:1px solid #105388;}
+.darik-item .img-link img{display:block;border:1px solid #ffffff;transition:border-color 0.5s;}
+.darik-item-category{font:italic 14px Georgia;color:#105388;margin-top:5px}
+.darik-items-pager{float:left;position:relative;left:50%;}
+.darik-items-pager li{float:left;position:relative;right:50%;padding:0 5px;}
+.darik-items-pager li a{display:block;width:18px;height:13px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -160px -105px;}
+.darik-items-pager li a:hover{height:17px;background-position:-178px -105px;}
+.darik-items-pager li .selected,.darik-items-pager li .selected:hover{height:17px;background-position:-196px -105px;}
+.darik-time-posted{color: #636363;font: italic 11px Georgia;display:block;margin-top:2px}
+/*
+--------- Sport Block --------- */
+.sport-block{margin-bottom:18px;padding-bottom:11px;border-bottom:solid 1px #d5d5d5;}
+.container-category .sport-block{margin-bottom:0;}
+.sport-content{/*overflow:hidden;*/}
+.sport-main{float:left;width:305px;}
+.sport-main .img-link{display:block;height:186px;}
+.sport-main h3 a{display:block;height:59px;padding:8px 14px 0;font:15px/18px Georgia;color:#252525;border-bottom:solid 1px #f2f2f2;background:#f2f2f2;overflow:hidden;text-shadow:1px 1px #fff;transition:border-color 0.5s}
+.sport-main h3 a span{display:block;height:36px;overflow:hidden;}
+.sport-main h3 a span.time-posted{float:left;margin-right:9px;font:italic 11px Georgia;color:#838383;text-shadow:1px 1px #fff;}
+.sport-main.selected h3 a{color:#105388;border-color:#105388;background:#e7e7e7;}
+.sport-articles{float:right;width:330px;}
+.sport-articles li{display:block;border-bottom:solid 1px #d5d5d5;/*overflow:hidden;*/}
+.sport-articles li.last{border-bottom:none;}
+.sport-articles li .img-link{float:left;position:relative;top:14px;right:1px;height:66px;margin-right:19px;}
+.sport-articles li .img-link img{border:solid 1px #fff;transition:border-color 0.5s;}
+.sport-articles li h3 a{display:block;height:66px;padding:14px 0;font:15px Georgia;color:#252525;}
+.sport-articles li h3 a span{display:block;position:relative;top:-2px;line-height:17px}
+.sport-articles li h3 a span.time-posted{color: #636363;font: italic 11px Georgia;}
+.sport-articles li.first .img-link{top:-1px;}
+.sport-articles li.first h3 a{height:65px;padding-top:0;}
+.sport-articles li.last h3 a{padding-bottom:0;}
+.sport-articles li.selected h3 a{color:#105388;}
+.sport-articles li.selected .img-link img{border:solid 1px #105388;}
+.sport-categories{clear:both;padding-top:10px;}
+.sport-see-more{font:12px Arial;color:#666;}
+.sport-categories ul{display:inline;}
+.sport-categories li{display:inline;}
+.sport-categories li a{font:12px Arial;color:#105388;}
+.sport-categories li a:hover{text-decoration:underline;}
+.sport-categories li .sep{margin-left:6px;font:15px Arial;color:#b6b6b7;}
+/*
+--------- Photo Block --------- */
+.photo-block{margin-bottom:19px;}
+.inner-video{margin-bottom:19px;clear:both;}
+.photo-block.top,.article-column .main-video{margin-top:30px;}
+.photo-block .heading-1{margin-bottom:10px;}
+.photo-content{margin-top:3px;border:solid 1px #d5d5d6;}
+.photo-image{width:651px;height:488px;padding:1px;}
+.photo-image-inner{position:relative;width:651px;height:488px;background:#f2f2f2;}
+.photo-image-inner figure{width:651px;height:488px;/*cursor:pointer;*/text-align:center;font-size:0;}
+.center-helper{display:inline-block;height:100%;vertical-align:middle;}
+.photo-image-wrapper{display:inline-block;position:relative;}
+.photo-image-inner img{position:relative;/*cursor:pointer;*/vertical-align:middle;}
+.photo-image-hover{display:none;position:absolute;bottom:0;left:0;width:651px;/*height:191px;*/padding:12px 0 22px;text-align:left;background:url(http://m.netinfo.bg/vesti/images/photo-image-shadow-2.png) repeat;z-index:10;}
+.photo-image-hover p{/*position:absolute;bottom:21px;left:0;*/padding:0 12px;font:15px Georgia;color:#fff;}
+.photo-image-hover .photo-image-text a{color: #1053ee;}
+.photo-image-hover .photo-image-text a:visited{color: #105388;}
+.photo-image-source{position:absolute;right:9px;bottom:3px;font:italic 11px Georgia;color:#848484;}
+a.photo-image-source:hover{text-decoration:underline;}
+.photo-prev{display:none;position:absolute;top:0;left:0;width:326px;height:488px;overflow:hidden}
+.photo-prev span{position:absolute;top:220px;left:0;width:50px;height:50px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -171px -175px;}
+.photo-more-prev{top:233px;left:16px;width:14px;height:25px;background-position:-171px -242px;}
+.photo-more-prev:hover{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -30px -1215px;}
+.photo-next{display:none;position:absolute;top:0;right:0;width:325px;height:488px;overflow:hidden}
+.photo-next span{position:absolute;top:220px;right:0;width:50px;height:50px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -171px -125px;}
+.photo-zoom{display:none;position:absolute;top:10px;right:10px;width:32px;height:28px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -248px -252px;z-index:10;}
+.photo-nav{position:relative;width:628px;height:74px;margin:0 auto;}
+.photo-nav-inner{position:absolute;top:-9px;width:628px;height:98px;overflow:hidden;}
+.photo-nav ul{/*width:10000px;*/height:auto;overflow:hidden;}
+.photo-nav ul li{float:left;padding:21px 0 0 9px;}
+.photo-nav ul li.first{padding-left:0;}
+.photo-nav ul li.selected{/*background:url(http://m.netinfo.bg/vesti/images/photo-nav-bullet.png) no-repeat 41px 0;*/}
+.photo-nav ul li.first.selected{background-position:34px 0;}
+.photo-nav ul li a{display:block;width:82px;height:51px;}
+.photo-nav ul li a img{border:solid 1px #fff;transition:border-color 0.5s;}
+.photo-nav ul .selected a img,.photo-nav ul li a:hover img{border:solid 1px #115891;}
+.photo-nav-scroller{height:15px;background:#f0f0f0;}
+.photo-more{display:none;width:555px;margin:0 auto;padding-top:11px;}
+.photo-more-title{display:block;margin-bottom:15px;font:18px Georgia;color:#252525;}
+.photo-more ul{margin-bottom:3px;overflow:hidden;}
+.photo-more li{float:left;position:relative;margin-bottom:6px;padding: 0 2px 0 3px;}
+.photo-more li .img-link{display:block;width:178px;height:109px;padding:1px 1px 0 1px;background:#252525;}
+.photo-more li h4 a{display:block;width:168px;height:74px;padding:6px 6px 0;font:13px/16px Georgia;color:#fff;background:#252525;overflow:hidden;transition:background-color 0.5s;}
+.article-window .article-text .photo-more li h4 a{color:#fff;}
+.photo-more li h4 a .time-posted{display:block;font:italic 11px Georgia;color:#838383;transition:color 0.5s;}
+.photo-more li.selected .img-link{background:#115891;}
+.photo-more li.selected h4 a{background:#115891;text-shadow:1px 1px #0e4b7c;}
+.photo-more li.selected h4 a .time-posted{display:block;font:italic 11px Georgia;color:#a3c0e3;}
+.photo-reload{display:none;margin:0 auto;}
+.article-text .photo-block{float:left;}
+/*
+--------- Video Block --------- */
+.video-block{margin-bottom:19px;}
+.video-content{overflow:hidden;}
+.video-content .video{float:left;width:305px;padding-right:22px;border-right:solid 1px #ccc;}
+.video-content .video.right{float:right;width:305px;padding:0;border:none;}
+.video-content .video .img-link{display:block;position:relative;height:179px;}
+.video-content .video .img-link .video-icon{position:absolute;top:0px;left:0px;width:45px;height:45px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -100px -291px;}
+.video-content .video.selected .img-link .video-icon{background-position:-145px -291px;}
+.video-content .video h3 a{display:block;height:56px;padding:8px 14px 0;font:15px/17px Georgia;color:#252525;border-bottom:solid 1px #f2f2f2;background:#f2f2f2;overflow:hidden;text-shadow:1px 1px #fff;transition:border-color 0.5s,background-color 0.5s;}
+.video-content .video h3 a span{display:block;overflow:hidden;}
+.video-content .video h3 a .time-posted{float:left;margin-right:9px;font:italic 11px Georgia;color:#838383;text-shadow:1px 1px #fff;}
+.video-content .video h3 a .seen{float:left;height:14px;margin-right:9px;padding-left:20px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -157px 3px;text-shadow:1px 1px #fff;}
+.video-content .video.selected h3 a{color:#105388;border-bottom:solid 1px #105388;background:#e7e7e7;}
+/*
+--------- Developing Topics Block --------- */
+.developing-topics-block{overflow:hidden;}
+.developing-topics-content{position:relative;height:108px;margin-bottom:33px;border-top:solid 1px #d5d5d6;/*overflow:hidden;*/}
+.developing-topics-content h3{margin-bottom:14px;}
+.developing-topics-content h3 a{text-transform:uppercase;font:15px Arial;color:#252525;}
+.developing-topics-content h3 a:hover{color:#105388;}
+.developing-topics-wrapper{display:none;position:absolute;top:10px;left:0;width:655px;height:98px;}
+.developing-topics-wrapper.selected{display:block;}
+.developing-topic{float:left;width:327px;}
+.developing-topic div{overflow:hidden;}
+.developing-topic .img-link{float:left;position:relative;height:66px;}
+.developing-topic .img-link img{border:solid 1px #fff;transition:border-color 0.5s;}
+.developing-topic .selected .img-link img{border:solid 1px #105388;}
+.developing-topic .video-icon{position:absolute;top:1px;left:1px;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -337px;}
+.developing-topic .photo-icon{position:absolute;top:1px;left:1px;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -70px -337px;}
+.developing-topic h4 a{display:block;position:relative;top:-2px;height:67px;padding:0 14px 0 8px;font:15px/17px Georgia;color:#252525;overflow:hidden;}
+.developing-topic .selected h4 a{color:#105388;}
+.developing-topic .selected .video-icon{background-position:-35px -337px;}
+.developing-topic .selected .photo-icon{background-position:-105px -337px;}
+.developing-topic h4 a time{font:italic 11px Georgia;color:#636363;}
+.developing-topics-pager{float:left;position:relative;left:50%;}
+.developing-topics-pager li{float:left;position:relative;right:50%;padding:0 5px;}
+.developing-topics-pager li a{display:block;width:18px;height:13px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -160px -105px;}
+.developing-topics-pager li a:hover{height:17px;background-position:-178px -105px;}
+.developing-topics-pager li .selected,.developing-topics-pager li .selected:hover{height:17px;background-position:-196px -105px;}
+/*
+--------- Right Block --------- */
+.content-right{float:right;width:305px;}
+.article-window .content-right{padding-top:10px;}
+/*
+--------- Right Banner Block --------- */
+.banner-right-top{ width: 305px; position: relative; font-size: 0; }
+.banner-right-top img,.banner-right-top embed,.banner-right-top object,.banner-right-top iframe{display:block;margin-bottom:20px;border:solid 3px #f4f4f4;border-right:solid 2px #f4f4f4;}
+.banner-right-top embed{border:none;}
+.banner-right-top-title{position:absolute;top:-13px;right:0;font:10px Arial;color:#aeaeae;display:none;}
+/*
+--------- Top Banner Block --------- */
+.bannerPosition{margin:auto;position:relative;clear:both;}
+.bannerPosition td{position:relative;}
+.bannerPosition img,.bannerPosition embed,.bannerPosition object,.bannerPosition iframe{margin:28px auto -10px;}
+.bannerPosition .banner-right-top-title{top:15px;}
+.container .bannerPosition{margin-bottom: -20px;} 
+/*
+--------- Latest Popular & Most Commented Block --------- */
+.l-p-c-block{position:relative;/*height:421px;*/height:420px;margin-bottom:20px;background:#e9e9e9;overflow:hidden;}
+.l-p-c-block header{position:relative;/*height:41px;*/}
+.l-p-c-block header h2{height:41px;border-bottom:solid 1px #fff;background:#f2f2f2;}
+/*.l-p-c-block header h2.shadow{position:absolute;width:305px;padding-bottom:8px;z-index:3;background:url(http://m.netinfo.bg/vesti/images/tab-content-bg.png) repeat-x bottom;}*/
+.l-p-c-block h2 a{display:block;height:40px;padding:0 10px;font:24px/41px Georgia;color:#666;border-bottom:solid 1px #d0d0d0;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -6px -245px;text-shadow:1px 1px #fff;transition:background-color 0.5s;}
+.l-p-c-block h2 a span{display:block;height:39px;padding-left:11px;/*border-top:solid 1px #fff;border-bottom:solid 1px #d0d0d0;*/}
+.l-p-c-block h2 a:hover{color:#105388;/*background-color:#e7e7e7;*/background-color:#e7e7e7;background-position:10px -1625px;}
+/*.latest-block h2 a span{border-top:solid 1px #f2f2f2;}*/
+.most-commented-block h2 a{border-bottom:none;}
+.l-p-c-content{position:relative;}
+.jumping-bug-fix{position:absolute;bottom:0;left:0;width:305px;height:41px;}
+.l-p-c-block .selected h2 a{color:#105388;background-position:-5px -270px;}
+.l-p-c-block .selected h2 a:hover{background-color:transparent;}
+.l-p-c-block .selected h2 a span{/*border-top:solid 1px #fff;border-bottom:solid 1px #115891;*/}
+.latest-block.selected h2 a span{/*border-top:solid 1px #f2f2f2;*/}
+.tab-content{position:relative;height:294px;}
+.tab-content-inner{position:relative;width:305px;height:293px;/*margin-top:9px;*/border-bottom:solid 1px #d0d0d0;overflow:hidden;}
+#popular,#most-commented,#popular-week,#popular-month,#most-commented-week,#most-commented-month{display:none;}
+#latest,#popular/*,#most-commented*/{border-bottom:solid 1px #fff;}
+#most-commented{/*padding-bottom:1px;*/}
+.most-commented-block.selected h2 a{border-bottom:solid 1px #d0d0d0;}
+.tab-content ul{height:25px;padding-top:5px;border-bottom:solid 1px #cfcfcf;}
+.tab-content ul li{float:left;width:101px;height:20px;text-align:center;border-right:solid 1px #d0d0d0;}
+.tab-content ul li.last{border-right:none;}
+.tab-content ul li a{display:block;height:20px;font:12px/20px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.tab-content ul li.selected a{font-weight:bold;}
+.tab-content ul li a:hover{color:#105388;}
+.tab-content-2{position:relative;}
+.tab-content-2-inner{position:relative;width:305px;height:262px;border-bottom:solid 1px #d0d0d0;overflow:hidden;}
+#most-commented .tab-content-2-inner{padding-top:1px;border-bottom:none;}
+.tab-content-row{display:block;width:305px;transition:background-color 0.5s;}
+.tab-content-row:hover{background:#dedede;}
+.tab-content-row:hover .tab-content-row-inner{border-top:solid 1px #dedede;}
+.tab-content-row-inner{width:285px;height:58px;margin:0 auto;padding-top:6px;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;}
+#latest .tab-content-row-inner{height:62px;padding-top:10px;}
+.tab-content-row.first .tab-content-row-inner{border-top:none;}
+.tab-content-row.last .tab-content-row-inner{/*border-bottom:solid 1px #f2f2f2;*/}
+.tab-content-row.first:hover .tab-content-row-inner{/*border-top:solid 1px #fff;*/}
+.tab-content-row.last:hover .tab-content-row-inner{border-bottom:solid 1px #cfcfcf;}
+.tab-content-row .img-link{float:left;position:relative;height:52px;margin-right:13px;z-index:2;}
+.tab-content-row .img-link img{border:solid 1px #e7e7e7;transition:border-color 0.5s;}
+.tab-content-row:hover .img-link img{border:solid 1px #115891;}
+.tab-content-row h3{position:relative;top:-2px;font:15px/18px Georgia;color:#252525;overflow:hidden;text-shadow:1px 1px #fff;z-index:1;}
+.tab-content-row:hover h3{color:#115891;}
+.tab-content .more{border-bottom:solid 1px #cfcfcf;}
+#most-commented .more{border-bottom:none;}
+.tab-more-button{float:right;position:relative;right:13px;margin-top:5px;}
+.l-p-c-block .jspCapTop{display:block;height:6px;}
+.l-p-c-block .jspCapBottom{display:block;height:7px;}
+.tab-content .top-shadow{top:0;}
+.tab-content-2 .top-shadow{top:0;}
+.tab-content .pad,.tab-content-2 .pad{clear:both;display:block;height:7px;}
+/*
+--------- Entertainment Block --------- */
+.entertainment-content{border-top:solid 1px #fff;overflow:hidden;}
+.entertainment-row{display:block;padding:0 10px;transition:background-color 0.5s;}
+.entertainment-row:hover{background:#e7e7e7;}
+.entertainment-row-inner{height:65px;padding-top:5px;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;}
+.entertainment-row.first .entertainment-row-inner{padding-top:8px;border-top:solid 1px #f2f2f2;}
+.entertainment-row.last .entertainment-row-inner{padding-bottom:2px;border-bottom:solid 1px #f2f2f2;}
+.entertainment-row:hover .entertainment-row-inner{border-top:solid 1px #fff;}
+.entertainment-row.first:hover .entertainment-row-inner{border-top:solid 1px #e7e7e7;}
+.entertainment-row img{float:left;height:57px;margin-right:10px;border:solid 1px #f2f2f2;z-index:2;transition:border-color 0.5s;}
+.entertainment-row:hover img{border:solid 1px #115891;}
+.entertainment-row h3{height:54px;font:15px/18px Georgia;color:#252525;overflow:hidden;text-shadow:1px 1px #fff;z-index:1;}
+.entertainment-row:hover h3{color:#115891;}
+.entertainment-more-button{float:right;position:relative;top:0;right:10px;margin-top:7px;padding:0 6px;}
+/*
+--------- Hot Offers Block --------- */
+.hot-offers-block{position:relative;margin-bottom:20px;border:solid 1px #cfcfcf;}
+.hot-offers-block .heading-2{padding:0 9px;border-bottom:solid 1px #cfcfcf;}
+.hot-offers-block .heading-2 h2{height:40px;font:24px/37px Georgia;color:#105388;}
+.hot-offers-block ul{padding:13px 9px 13px;}
+.hot-offers-block li{display:block;}
+.hot-offers-block li a{display:block;margin-bottom:15px;padding-left:8px;font:12px/14px Arial;color:#252525;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -16px -311px;}
+.hot-offers-block li a:hover{color:#115891;background-position:-16px -351px;}
+.hot-offers-link{position:absolute;right:0;bottom:0;width:110px;height:13px;padding:0 4px;font:11px/14px Arial;color:#666;background:#cecece;}
+/*
+--------- Horoscope Block --------- */
+.horoscope-content{position:relative;padding-bottom:10px;background:#e9e9e9;}
+.horoscope-information{height:40px;border-bottom:solid 1px #cfcfcf;}
+.horoscope-image{float:left;margin:10px 10px 0 0;}
+.aries-image{background-position:0 -383px;}
+.taurus-image{background-position:0 -426px;}
+.gemini-image{background-position:0 -469px;}
+.cancer-image{background-position:0 -513px;}
+.leo-image{background-position:0 -558px;}
+.virgo-image{background-position:0 -603px;}
+.libra-image{background-position:0 -648px;}
+.scorpio-image{background-position:0 -692px;}
+.sagittarius-image{background-position:0 -733px;}
+.capricorn-image{background-position:0 -778px;}
+.aquarius-image{background-position:0 -821px;}
+.pisces-image{background-position:0 -868px;}
+.horoscope-name{position:relative;top:4px;padding-right:16px;font:bold 13px Arial;color:#105388;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 100% -1448px;text-shadow:1px 1px #fff;}
+.horoscope-date{display:block;position:relative;top:3px;margin-bottom:16px;font:italic 11px Georgia;color:#838383;}
+.horoscope-tabs{height:25px;padding-top:4px;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;background:#f2f2f2;}
+.horoscope-tabs li{float:left;width:101px;height:20px;text-align:center;border-right:solid 1px #d0d0d0;}
+.horoscope-tabs li.last{border-right:none;}
+.horoscope-tabs li a{display:block;height:20px;font:12px/20px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.horoscope-tabs li.selected a{cursor:default;font-weight:bold;}
+.horoscope-tabs li a:hover{color:#105388;}
+.horoscope-tabs li.selected a:hover{color:#252525;}
+#horoscope-week,#horoscope-month{display:none;}
+.horoscope-main{position:relative;width:285px;height:194px;padding:0 10px;overflow:hidden;}
+.horoscope-main p{position:relative;font:13px Arial;color:#636363;text-shadow:1px 1px #fff;}
+.horoscope-main p a{font:12px Arial;color:#105388;text-shadow:1px 1px #fff;}
+.horoscope-main p a:hover{text-decoration:underline;}
+.horoscope-main p img{position:absolute;left:50%;margin-left:-16px;}
+.horoscope-main-week{position:absolute;right:73px;bottom:0;padding:0 8px;}
+.horoscope-main-month{position:absolute;right:0;bottom:0;padding:0 8px;}
+.horoscope-list-outer{display:none;position:absolute;top:53px;left:96px;width:156px;height:168px;background:url(http://m.netinfo.bg/vesti/images/horoscope-list-bg.png) no-repeat;}
+.horoscope-list{position:relative;top:5px;width:138px;height:150px;margin:0 auto;overflow:hidden;}
+.horoscope-list li{display:block;width:138px;height:30px;}
+.horoscope-list li a{display:block;height:30px;padding-left:48px;font:13px/31px Arial;color:#105388;background:#f2f2f2 url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat;;text-shadow:1px 1px #fff;}
+.horoscope-list li.selected a{color:#2f2f2f;background-color:#e7e7e7;}
+.horoscope-list li a:hover{background-color:#e7e7e7;}
+.horoscope-list li .aries{background-position:0 -384px;}
+.horoscope-list li .taurus{background-position:0 -414px;}
+.horoscope-list li .gemini{background-position:0 -444px;}
+.horoscope-list li .cancer{background-position:0 -474px;}
+.horoscope-list li .leo{background-position:0 -504px;}
+.horoscope-list li .virgo{background-position:0 -534px;}
+.horoscope-list li .libra{background-position:0 -564px;}
+.horoscope-list li .scorpio{background-position:0 -594px;}
+.horoscope-list li .sagittarius{background-position:0 -624px;}
+.horoscope-list li .capricorn{background-position:0 -654px;}
+.horoscope-list li .aquarius{background-position:0 -684px;}
+.horoscope-list li .pisces{background-position:0 -714px;}
+.horoscope-main .horoscope-button{float:right;position:relative;top:1px;right:3px;}
+.horoscope-content .top-shadow{top:31px;}
+.horoscope-list .jspCap{display:block;height:6px;}
+.horoscope-main .jspCapTop{display:block;height:10px;}
+/*
+--------- TV Program Block --------- */
+.tv-program-content{overflow:hidden;}
+#tv-program{position:relative;border-top:solid 1px #fff;}
+.current-tv-programs{display:block;height:27px;padding-left:12px;font:bold 12px/28px Arial;color:#2f2f2f;border-bottom:solid 1px #cfcfcf;}
+.tv-program{width:305px;height:227px;background:#e9e9e9;overflow:auto;}
+.tv-program-row{display:block;position:relative;padding:0 10px;}
+.tv-program-row:hover{background:#dedede;}
+.tv-program-row-inner{display:block;border-bottom:solid 1px #cfcfcf;overflow:hidden;}
+.tv-program-logo{position:absolute;top:0;left:0;width:65px;height:63px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite-tv.png) no-repeat;}
+.tv-program-logo.kitchen{background-position:0 0;}
+.tv-program-logo.animal-planet{background-position:0 -63px;}
+.tv-program-logo.axn{background-position:0 -126px;}
+.tv-program-logo.axn-crime{background-position:0 -189px;}
+.tv-program-logo.axn-scifi{background-position:0 -252px;}
+.tv-program-logo.bgtv{background-position:0 -315px;}
+.tv-program-logo.bnt-2{background-position:0 -378px;}
+.tv-program-logo.bnt-1{background-position:0 -441px;}
+.tv-program-logo.boomerang{background-position:0 -504px;}
+.tv-program-logo.bnt-sviat{background-position:0 -567px;}
+.tv-program-logo.btv{background-position:0 -630px;}
+.tv-program-logo.box-tv{background-position:0 -693px;}
+.tv-program-logo.btv-action{background-position:0 -756px;}
+.tv-program-logo.btv-lady{background-position:0 -819px;}
+.tv-program-logo.btv-comedy{background-position:0 -882px;}
+.tv-program-logo.btv-cinema{background-position:0 -945px;}
+.tv-program-logo.bulgaria-on-air{background-position:0 -1008px;}
+.tv-program-logo.cartoon-network{background-position:0 -1071px;}
+.tv-program-logo.cbs-drama{background-position:0 -1134px;}
+.tv-program-logo.cbs-reality{background-position:0 -1197px;}
+.tv-program-logo.cinemax-2{background-position:0 -1260px;}
+.tv-program-logo.cinemax{background-position:0 -1323px;}
+.tv-program-logo.cnn{background-position:0 -1386px;}
+.tv-program-logo.city-tv{background-position:0 -1449px;}
+.tv-program-logo.diema{background-position:0 -1512px;}
+.tv-program-logo.da-vinci-learning{background-position:0 -1575px;}
+.tv-program-logo.diema-family{background-position:0 -1638px;}
+.tv-program-logo.discovery-channel{background-position:0 -1701px;}
+.tv-program-logo.ebf{background-position:0 -1764px;}
+.tv-program-logo.diva-universal{background-position:0 -1827px;}
+.tv-program-logo.discovery-science{background-position:0 -1890px;}
+.tv-program-logo.evropa{background-position:0 -1953px;}
+.tv-program-logo.disney-channel{background-position:0 -2016px;}
+.tv-program-logo.eurosport{background-position:0 -2079px;}
+.tv-program-logo.eurosport-2{background-position:0 -2142px;}
+.tv-program-logo.fiesta-tv{background-position:0 -2205px;}
+.tv-program-logo.fen-tv{background-position:0 -2268px;}
+.tv-program-logo.viasat-history{background-position:0 -2331px;}
+.tv-program-logo.viasat-explorer{background-position:0 -2394px;}
+.tv-program-logo.vh-1{background-position:0 -2457px;}
+.tv-program-logo.travel-channel{background-position:0 -2520px;}
+.tv-program-logo.tv-7{background-position:0 -2583px;}
+.tv-program-logo.tv-1000{background-position:0 -2646px;}
+.tv-program-logo.tlc{background-position:0 -2709px;}
+.tv-program-logo.tvtourism{background-position:0 -2772px;}
+.tv-program-logo.planeta-folk-tv{background-position:0 -2835px;}
+.tv-program-logo.planeta-tv{background-position:0 -2898px;}
+.tv-program-logo.ring-tv{background-position:0 -2961px;}
+.tv-program-logo.skat{background-position:0 -3024px;}
+.tv-program-logo.super7{background-position:0 -3087px}
+.tv-program-logo.tcm{background-position:0 -3150px}
+.tv-program-logo.the-voice-tv{background-position:0 -3213px}
+.tv-program-logo.nova-tv{background-position:0 -3276px;}
+.tv-program-logo.fl{background-position:0 -3339px;}
+.tv-program-logo.fox{background-position:0 -3402px;}
+.tv-program-logo.fox-crime{background-position:0 -3465px;}
+.tv-program-logo.fox-life{background-position:0 -3528px;}
+.tv-program-logo.hbo-comedy{background-position:0 -3591px;}
+.tv-program-logo.history-channel{background-position:0 -3654px;}
+.tv-program-logo.jimjam{background-position:0 -3717px;}
+.tv-program-logo.kanal-3{background-position:0 -3780px;}
+.tv-program-logo.kinonova{background-position:0 -3843px;}
+.tv-program-logo.mgm{background-position:0 -3906px;}
+.tv-program-logo.mtv{background-position:0 -3969px;}
+.tv-program-logo.hbo{background-position:0 -4032px;}
+.tv-program-logo.national-geographic{background-position:0 -4095px;}
+.tv-program-logo.national-geographic-wild{background-position:0 -4158px;}
+.tv-program-logo.nbt{background-position:0 -4221px;}
+.tv-program-logo.news7{background-position:0 -4284px;}
+.tv-program-logo.nova-sport{background-position:0 -4347px;}
+
+.tv-program-row:hover .tv-program-logo.kitchen{background-position:-65px 0;}
+.tv-program-row:hover .tv-program-logo.animal-planet{background-position:-65px -63px;}
+.tv-program-row:hover .tv-program-logo.axn{background-position:-65px -126px;}
+.tv-program-row:hover .tv-program-logo.axn-crime{background-position:-65px -189px;}
+.tv-program-row:hover .tv-program-logo.axn-scifi{background-position:-65px -252px;}
+.tv-program-row:hover .tv-program-logo.bgtv{background-position:-65px -315px;}
+.tv-program-row:hover .tv-program-logo.bnt-2{background-position:-65px -378px;}
+.tv-program-row:hover .tv-program-logo.bnt-1{background-position:-65px -441px;}
+.tv-program-row:hover .tv-program-logo.boomerang{background-position:-65px -504px;}
+.tv-program-row:hover .tv-program-logo.bnt-sviat{background-position:-65px -567px;}
+.tv-program-row:hover .tv-program-logo.btv{background-position:-65px -630px;}
+.tv-program-row:hover .tv-program-logo.box-tv{background-position:-65px -693px;}
+.tv-program-row:hover .tv-program-logo.btv-action{background-position:-65px -756px;}
+.tv-program-row:hover .tv-program-logo.btv-lady{background-position:-65px -819px;}
+.tv-program-row:hover .tv-program-logo.btv-comedy{background-position:-65px -882px;}
+.tv-program-row:hover .tv-program-logo.btv-cinema{background-position:-65px -945px;}
+.tv-program-row:hover .tv-program-logo.bulgaria-on-air{background-position:-65px -1008px;}
+.tv-program-row:hover .tv-program-logo.cartoon-network{background-position:-65px -1071px;}
+.tv-program-row:hover .tv-program-logo.cbs-drama{background-position:-65px -1134px;}
+.tv-program-row:hover .tv-program-logo.cbs-reality{background-position:-65px -1197px;}
+.tv-program-row:hover .tv-program-logo.cinemax-2{background-position:-65px -1260px;}
+.tv-program-row:hover .tv-program-logo.cinemax{background-position:-65px -1323px;}
+.tv-program-row:hover .tv-program-logo.cnn{background-position:-65px -1386px;}
+.tv-program-row:hover .tv-program-logo.city-tv{background-position:-65px -1449px;}
+.tv-program-row:hover .tv-program-logo.diema{background-position:-65px -1512px;}
+.tv-program-row:hover .tv-program-logo.da-vinci-learning{background-position:-65px -1575px;}
+.tv-program-row:hover .tv-program-logo.diema-family{background-position:-65px -1638px;}
+.tv-program-row:hover .tv-program-logo.discovery-channel{background-position:-65px -1701px;}
+.tv-program-row:hover .tv-program-logo.ebf{background-position:-65px -1764px;}
+.tv-program-row:hover .tv-program-logo.diva-universal{background-position:-65px -1827px;}
+.tv-program-row:hover .tv-program-logo.discovery-science{background-position:-65px -1890px;}
+.tv-program-row:hover .tv-program-logo.evropa{background-position:-65px -1953px;}
+.tv-program-row:hover .tv-program-logo.disney-channel{background-position:-65px -2016px;}
+.tv-program-row:hover .tv-program-logo.eurosport{background-position:-65px -2079px;}
+.tv-program-row:hover .tv-program-logo.eurosport-2{background-position:-65px -2142px;}
+.tv-program-row:hover .tv-program-logo.fiesta-tv{background-position:-65px -2205px;}
+.tv-program-row:hover .tv-program-logo.fen-tv{background-position:-65px -2268px;}
+.tv-program-row:hover .tv-program-logo.viasat-history{background-position:-65px -2331px;}
+.tv-program-row:hover .tv-program-logo.viasat-explorer{background-position:-65px -2394px;}
+.tv-program-row:hover .tv-program-logo.vh-1{background-position:-65px -2457px;}
+.tv-program-row:hover .tv-program-logo.travel-channel{background-position:-65px -2520px;}
+.tv-program-row:hover .tv-program-logo.tv-7{background-position:-65px -2583px;}
+.tv-program-row:hover .tv-program-logo.tv-1000{background-position:-65px -2646px;}
+.tv-program-row:hover .tv-program-logo.tlc{background-position:-65px -2709px;}
+.tv-program-row:hover .tv-program-logo.tvtourism{background-position:-65px -2772px;}
+.tv-program-row:hover .tv-program-logo.planeta-folk-tv{background-position:-65px -2835px;}
+.tv-program-row:hover .tv-program-logo.planeta-tv{background-position:-65px -2898px;}
+.tv-program-row:hover .tv-program-logo.ring-tv{background-position:-65px -2961px;}
+.tv-program-row:hover .tv-program-logo.skat{background-position:-65px -3024px;}
+.tv-program-row:hover .tv-program-logo.super7{background-position:-65px -3087px}
+.tv-program-row:hover .tv-program-logo.tcm{background-position:-65px -3150px}
+.tv-program-row:hover .tv-program-logo.the-voice-tv{background-position:-65px -3213px}
+.tv-program-row:hover .tv-program-logo.nova-tv{background-position:-65px -3276px;}
+.tv-program-row:hover .tv-program-logo.fl{background-position:-65px -3339px;}
+.tv-program-row:hover .tv-program-logo.fox{background-position:-65px -3402px;}
+.tv-program-row:hover .tv-program-logo.fox-crime{background-position:-65px -3465px;}
+.tv-program-row:hover .tv-program-logo.fox-life{background-position:-65px -3528px;}
+.tv-program-row:hover .tv-program-logo.hbo-comedy{background-position:-65px -3591px;}
+.tv-program-row:hover .tv-program-logo.history-channel{background-position:-65px -3654px;}
+.tv-program-row:hover .tv-program-logo.jimjam{background-position:-65px -3717px;}
+.tv-program-row:hover .tv-program-logo.kanal-3{background-position:-65px -3780px;}
+.tv-program-row:hover .tv-program-logo.kinonova{background-position:-65px -3843px;}
+.tv-program-row:hover .tv-program-logo.mgm{background-position:-65px -3906px;}
+.tv-program-row:hover .tv-program-logo.mtv{background-position:-65px -3969px;}
+.tv-program-row:hover .tv-program-logo.hbo{background-position:-65px -4032px;}
+.tv-program-row:hover .tv-program-logo.national-geographic{background-position:-65px -4095px;}
+.tv-program-row:hover .tv-program-logo.national-geographic-wild{background-position:-65px -4158px;}
+.tv-program-row:hover .tv-program-logo.nbt{background-position:-65px -4221px;}
+.tv-program-row:hover .tv-program-logo.news7{background-position:-65px -4284px;}
+.tv-program-row:hover .tv-program-logo.nova-sport{background-position:-65px -4347px;}
+.tv-programming-name{float:right;width:230px;padding:10px 0 5px;font:13px Arial;color:#636363;text-shadow:1px 1px #fff;transition:color 0.5s}
+.tv-program-row:hover .tv-programming-name{color:#105388;}
+.tv-programming-hour{display:block;margin-top:2px;font:italic 11px Georgia;color:#000;text-shadow:1px 1px #fff;}
+.tv-program-tab a:hover .tv-programming-name{color:#105388;}
+.tv-program-button{float:right;position:relative;right:10px;margin-top:6px;}
+.tv-program .jspCap{display:block;height:10px;}
+.tv-program .pad{clear:both;display:block;height:10px;}
+/*
+--------- Cinema Block --------- */
+.cinema-content{padding:15px 10px 10px;border-top:solid 1px #fff;overflow:hidden;}
+.cinema-content .img-link{float:left;height:55px;margin-right:11px;}
+.cinema-content h3{position:relative;top:-3px}
+.cinema-content h3 a{display:block;font:bold 13px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.cinema-content h3 a:hover{color:#105388;}
+.cinema-content p{/*clear:both;*/margin-bottom:7px;padding-top:3px;font:13px Arial;color:#838383;text-shadow:1px 1px #fff;}
+.cinema-program-button{float:right;position:relative;right:3px;}
+/*
+--------- Exchange Rates Block --------- */
+.container-2 .exchange-rates-block{margin-bottom:0;}
+.exchange-rates-block.right-block-305{margin-bottom:20px;}
+.exchange-rates-content{position:relative;/*padding-bottom:7px;*/background:#e7e7e7;overflow:hidden;}
+.exchange-rates-updated{display:block;height:30px;padding-left:10px;font:bold 12px/31px Arial;color:#2f2f2f;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;background:#f2f2f2;text-shadow:1px 1px #fff;}
+.exchange-rates-updated span{font:italic 11px Georgia;color:#666;text-shadow:1px 1px #fff;}
+.exchange-rates-heading{height:30px;margin-bottom:2px;padding:0 10px;}
+.exchange-rates-heading span{float:left;width:94px;height:30px;font:12px/31px Arial;color:#636363;text-shadow:1px 1px #fff;}
+.exchange-rates{height:130px;overflow:hidden;}
+.exchange-rates-row{height:26px;padding:0 10px;}
+.exchange-rates-row.selected{background:#e7e7e7;}
+.exchange-rates-row span{float:left;width:94px;height:26px;text-shadow:1px 1px #fff;}
+.currancy-name{font:12px/27px Arial;color:#000;}
+.currancy-rate{font:12px/27px Arial;color:#2f2f2f;}
+.currancy-rate.up{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 18px -928px;}
+.currancy-rate.down{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 18px -951px;}
+.currancy-rate.no-change{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 18px -1553px;}
+.exchange-rates-button{float:right;position:relative;top:0;right:13px;}
+.exchange-rates-content .pad{clear:both;display:block;height:10px;}
+.exchange-rates-content .jspCap{display:block;height:10px;}
+.exchange-rates-content .jspCapTop{height:9px;}
+.exchange-rates-content .top-shadow{top:61px;}
+/*
+--------- Opinion Poll Block --------- */
+.poll-block.right-block-305{margin-bottom:0;}
+.poll-content{padding:13px 10px 10px;}
+.poll-content h3{margin-bottom:12px;font:bold 13px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.poll-content p{padding:8px 0;/*overflow:hidden;*/}
+.poll-content p.last{height:35px;padding-top:4px;padding-bottom:0;}
+.poll-content .radio-input{float:left;margin:0;padding:0;}
+.poll-content label{float:left;width:260px;margin-left:10px;font:13px/14px Arial;color:#252525;}
+.pull-submit-button{float:left;margin-right:5px;padding:0 13px;}
+.poll-results{float:left;position:relative;top:11px;font:12px Arial;color:#105388;text-shadow:1px 1px #fff;}
+.poll-comments{float:left;position:relative;top:11px;margin-right:5px;font:12px Arial;color:#105388;text-shadow:1px 1px #fff;}
+.poll-results:hover,.poll-comments:hover{text-decoration:underline;}
+.poll-comments-number{float:left;position:relative;top:11px;height:15px;padding-left:17px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -157px -13px;text-shadow:1px 1px #fff;}
+.poll-content .sep{float:left;position:relative;top:11px;padding:0 5px;font:15px/13px Arial;color:#cfcfcf;}
+/*.poll-results-block{overflow:hidden;}*/
+.poll-results-row div{height:15px;overflow:hidden;}
+.poll-answer{display:block;font:13px/14px Arial;color:#252525;}
+.poll-bar{float:left;position:relative;top:6px;height:3px;background:#115891;}
+.poll-results-row div strong{float:left;position:relative;top:-1px;margin-left:7px;font:bold 12px Georgia;color:#115891;}
+.poll-results-row.last{height:35px;margin-top:10px;/*overflow:hidden;*/}
+.poll-back-button{float:left;margin-right:7px;}
+/*
+--------- Paging --------- */
+.paging{position:relative;}
+.paging.top{margin-bottom:30px;}
+.paging.bottom{margin-top:30px;padding-top:20px;border-top:solid 1px #d0d0d0;}
+.paging-list{height:25px;}
+.paging-list li{float:left;}
+li.prev-day{height:25px;}
+li.next-day{float:right;position:relative;height:25px;}
+.prev-day a{display:block;width:120px;height:25px;padding-left:27px;font:14px/22px Arial;color:#105388;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -30px -1215px;}
+.prev-day span{display:block;width:120px;height:25px;padding-left:27px;font:14px/22px Arial;color:#838383;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -30px -1240px;}
+.next-day a{display:block;width:120px;height:25px;padding-right:27px;text-align:right;font:14px/22px Arial;color:#105388;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 103px -1265px;}
+.next-day span{display:block;width:120px;height:25px;padding-right:27px;text-align:right;font:14px/22px Arial;color:#838383;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 103px -1290px;}
+/*.paging-list li a{display:block;width:26px;height:25px;font:12px Arial;color:#252525;}*/
+.articles-for-day{width:359px;text-align:center;font:italic 17px Georgia;color:#252525;border-right:solid 1px #d0d0d0;border-left:solid 1px #d0d0d0;}
+.date-picker{padding-right:22px;font:italic 17px Georgia;color:#105388;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 100% -1315px;}
+/*
+--------- Articles List --------- */
+.articles-list{display:block;position:relative;padding:14px 0;border-bottom:solid 1px #d0d0d0;background:none;/*overflow:hidden;*/transition:border-color 0.5s;}
+.articles-list.first{padding-top:0;}
+.articles-list:hover{border-bottom:solid 1px #105388;}
+.articles-list.last{padding-bottom:0;border-bottom:none;}
+.article-number{float:left;width:73px;height:89px;text-align:center;font:50px/85px Georgia;color:#838383;border:solid 1px #d0d0d0;background:#f4f4f4;transition:color 0.5s,border-color 0.5s,background-color 0.5s;}
+.articles-list:hover .article-number{color:#115891;border-color:#e7e7e7;background:#e7e7e7;}
+.articles-list img{float:left;margin-right:20px;}
+.articles-list .video-icon{position:absolute;top:14px;left:0;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -337px;}
+.articles-list:hover .video-icon{background-position:-35px -337px;}
+.articles-list .photo-icon{position:absolute;top:14px;left:0;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -70px -337px;}
+.articles-list:hover .photo-icon{background-position:-105px -337px;}
+.articles-list.first .video-icon,.articles-list.first .photo-icon{top:0;}
+.articles-list h3{position:relative;top:-4px;margin-bottom:2px;/*padding-left:20px;*/font:bold 16px/19px Georgia;color:#252525;text-shadow:none;overflow:hidden;}
+.articles-list:hover h3{color:#105388;}
+.articles-list p{margin-bottom:7px;/*padding-left:20px;*/font:13px Arial;color:#838383;text-shadow:none;overflow:hidden;}
+.articles-list .article-info-block{/*padding-left:20px;*/overflow:hidden;}
+.articles-list .article-info-block .category-link{color:#105388;}
+.articles-list .article-info-block .category-link:hover{text-decoration:underline;}
+.articles-list .article-info-block .time-posted{line-height:16px;text-shadow:none;color:#838383;}
+.articles-list .article-info-block .sep{display:block;}
+.articles-list-2 img{margin-right:0;}
+.articles-list-2 h3{padding-left:20px}
+.articles-list-2 p{padding-left:20px}
+.articles-list-2 .article-info-block{padding-left:20px;}
+/*
+--------- Category Page --------- */
+.category-header{height:50px;margin-bottom:20px;border-bottom:solid 1px #e1e1e1;}
+.category-header h1{float:left;font:24px/49px Georgia;color:#105388;}
+.nav-subcategory{float:right;}
+.nav-subcategory ul li{float:left;height:50px;border-left:solid 1px #e1e1e1;}
+.nav-subcategory ul .first{border-left:none;}
+.nav-subcategory ul li a{display:block;position:relative;height:50px;margin:0 -1px;padding:0 18px;font:14px/51px Arial;color:#105388;border-bottom:solid 1px #e1e1e1;transition:border-color 0.5s;}
+.nav-subcategory ul li.selected a,.nav-subcategory ul li a:hover{color:#303030;border-bottom:solid 1px #115891;}
+.main-news-category{margin-bottom:20px;overflow:hidden;}
+.main-news-cat-article{float:left;width:405px;}
+.main-news-cat-article .img-link{display:block;height:247px;}
+.main-news-cat-article h2 a{display:block;height:57px;padding:7px 14px 0;font:bold 20px/24px Georgia;color:#252525;border-bottom:solid 1px #f2f2f2;background:#f2f2f2;overflow:hidden;transition:border-color 0.5s,background-color 0.5s;}
+.main-news-cat-article h2 a span{display:block;height:48px;overflow:hidden;}
+.main-news-cat-article.selected h2 a{color:#105388;border-color:#105388;background:#e7e7e7;}
+.main-news-cat-articles-list{float:right;width:230px;}
+.main-news-cat-articles-list li{display:block;border-top:solid 1px #fff;border-bottom:solid 1px #d5d5d5;overflow:hidden;}
+.main-news-cat-articles-list li.first{border-top:none;}
+.main-news-cat-articles-list li.last{border-bottom:none;}
+.main-news-cat-articles-list li .img-link{float:left;position:relative;top:12px;height:52px;margin:0 12px 0 10px;}
+.main-news-cat-articles-list li .img-link img{border:solid 1px #f2f2f2;transition:border-color 0.5s;}
+.main-news-cat-articles-list li h2 a{display:block;height:52px;padding:12px 5px 12px 0;font:15px Georgia;color:#252525;background:#f2f2f2;text-shadow:1px 1px #fff;transition:background-color 0.5s;}
+.main-news-cat-articles-list li h2 a span{display:block;position:relative;top:-2px;height:54px;padding-left:1px;overflow:hidden;}
+.main-news-cat-articles-list li.selected h2 a{color:#105388;background:#e7e7e7;}
+.main-news-cat-articles-list li.selected .img-link img{border:solid 1px #105388;}
+.main-news-cat-articles-list li.first h2 a,.main-news-cat-articles-list li.last h2 a{padding-bottom:13px;}
+.container-category .articles-more-button{float:right;margin-top:12px;}
+/*
+--------- Currency Calculator Block --------- */
+.currency-calculator-block{margin-bottom:18px;}
+.currency-calculator-content{height:110px;padding:19px 7px;background:#f2f2f2;}
+.currency-calculate{position:relative;height:35px;padding-bottom:20px;}
+.currency-amount{float:left;width:117px;height:33px;margin-right:10px;padding:0 2px 0 10px;font:13px Arial;color:#2f2f2f;border:solid 1px #115488;background:#fff;}
+.currency-amount.blur{border:solid 1px #ccc;}
+.currency-from{float:left;width:210px;margin-right:4px;padding:0 19px 0 4px;height:33px;border:solid 1px #ccc;background:#fff url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 184px -1439px;}
+.currency-to{float:left;width:210px;/*margin-right:10px;*/padding:0 19px 0 4px;height:33px;border:solid 1px #ccc;background:#fff url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 184px -1439px;}
+.currency-calculate .flag{float:left;position:relative;top:10px;margin-right:4px;}
+.currency-name{float:left;position:relative;top:10px;font:12px Arial;color:#252525;}
+.currency-code{float:left;position:relative;top:10px;margin-right:4px;font:bold 12px Arial;color:#252525;}
+.currency-change{float:left;position:relative;top:11px;width:22px;height:14px;margin-right:4px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -46px;}
+.currency-calculate-button{float:left;width:74px;padding:0;}
+.currency-list{display:none;position:absolute;top:35px;left:141px;width:231px;height:179px;padding:1px;border:solid 1px #cecfd0;border-top:none;background:#fff;overflow:hidden;z-index:1;}
+.currency-to-list{left:406px;}
+.currency-list li{display:block;height:30px;}
+.currency-list li a{display:block;height:30px;padding-left:3px;font:13px/29px Arial;color:#2f2f2f;background:#f2f2f2;text-shadow:1px 1px #fff;}
+.currency-list li.selected a,.currency-list li a:hover{background:#e7e7e7;}
+.currency-list .flag{top:8px;}
+.currency-list .currency-name,.currency-list .currency-code{top:7px;color:#115891;}
+.currency-list li.selected .currency-name,.currency-list li.selected .currency-code{color:#2f2f2f;}
+.currency-list .jspVerticalBar{right:2px;}
+.currency-list .jspVerticalBar .jspCap{display:block;height:6px;}
+.currency-result{height:73px;text-align:center;border-top:solid 1px #d0d0d0;overflow:hidden;}
+/*.currency-from-result{position:relative;top:-18px;font:13px Arial;color:#2f2f2f;text-shadow:1px 1px #fff;}*/
+.currency-equals{padding:0 17px;font:57px/69px Arial;color:#252525;}
+.currency-from-result,.currency-to-result{position:relative;top:-12px;font:24px Arial;color:#252525;}
+.currency-result-notice{position:relative;top:26px;font:15px Arial;color:#2f2f2f;text-shadow:1px 1px #fff;}
+/*
+--------- Fixed Exchange Rates Block --------- */
+.fixed-exchange-rate-block{margin-bottom:12px;}
+.fixed-exchange-rate-content{padding-top:17px;border-top:solid 1px #cfcfcf;}
+.fixed-exchange-rate-info{margin-bottom:13px;font:12px/16px Arial;color:#838383;}
+.fixed-exchange-rate-info strong{clear:both;display:block;margin-bottom:7px;font:bold 13px Arial;color:#2f2f2f;}
+.fixed-exchange-rate-info strong span{font:italic 12px Georgia;color:#838383;}
+.fixed-rates-wrapper-outer{padding-bottom:4px;border:solid 1px #cfcfcf;background:#e7e7e7;}
+.fixed-rates-wrapper{height:275px;overflow:hidden;}
+.fixed-rates-table{width:100%;/*border:solid 1px #cfcfcf;*/background:#fff;}
+.fixed-rates-table .bgn{display:none;}
+.fixed-rates-table th{height:30px;padding-left:8px;vertical-align:middle;text-align:left;font:12px Arial;color:#838383;background:#e7e7e7;text-shadow:1px 1px #fff;}
+.fixed-rates-table td{height:40px;padding-left:8px;vertical-align:middle;font:12px Arial;border-bottom:solid 1px #cfcfcf;}
+.fixed-rates-table .hover td{background-color:#f2f2f2;}
+.fixed-rates-table .currancy-rate{display:block;}
+.fixed-rates-table .flag{margin-right:12px;}
+.fixed-rates-table td strong{position:relative;top:-1px;font:bold 14px Arial;}
+.fixed-rates-more{margin:8px auto 0;}
+.fixed-rates-more.selected:hover{cursor:default;color:#252525;background-position:-142px -346px;}
+/*
+--------- Useful Links Block --------- */
+.useful-links-content{background:#f0f0f0;}
+.useful-links-row{position:relative;height:63px;padding:27px 0 0 83px;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;}
+.useful-links-row.first{border-top:none;}
+.useful-links-row.last{border-bottom:none;}
+.wage-icon{position:absolute;top:22px;left:17px;width:45px;height:46px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -291px;}
+.property-icon{position:absolute;top:21px;left:11px;width:53px;height:45px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -45px -291px;}
+.insurance-icon{position:absolute;top:19px;left:14px;width:43px;height:48px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -1px -1340px;}
+.lending-icon{position:absolute;top:21px;left:18px;width:38px;height:51px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -6px -1388px;}
+.useful-links-row h3{margin-bottom:7px;text-transform:uppercase;font:bold 14px Arial;color:#252525;}
+.useful-links-row ul li{float:left;height:15px;padding:0 12px;border-left:solid 1px #fff;border-right:solid 1px #b6b6b7;}
+.useful-links-row ul li.first{padding-left:0;border-left:none;}
+.useful-links-row ul li.last{padding-right:0;border-right:none;}
+.useful-links-row ul li a{display:block;font:12px Arial;color:#105388;text-shadow:1px 1px #fff;}
+.useful-links-row ul li a:hover{text-decoration:underline;}
+/*
+--------- Subcategory Page --------- */
+.subcategory-header{height:50px;margin-bottom:20px;border-bottom:solid 1px #e1e1e1;}
+.subcategory-header h1{float:left;font:24px/49px Georgia;color:#3a3a3a;}
+/*
+--------- Latest Page --------- */
+.l-p-c-nav{margin-bottom:20px;}
+.l-p-c-nav ul{height:37px;}
+.l-p-c-nav li{float:left;}
+.l-p-c-nav li a{display:block;width:218px;height:36px;text-align:center;font:24px/21px Georgia;color:#105388;border-bottom:solid 1px #e5e5e5;transition:border-color 0.5s;}
+.l-p-c-nav li.first a{width:219px;}
+.l-p-c-nav li.selected a,.l-p-c-nav li a:hover{color:#000;border-bottom:solid 1px #115891;}
+/*
+--------- Popular and Most Commented Pages --------- */
+.t-w-m-nav{margin-bottom:30px;}
+.t-w-m-nav ul{height:35px;border-bottom:solid 1px #d0d0d0;}
+.t-w-m-nav li{float:left;}
+.t-w-m-nav li a{display:block;width:146px;height:35px;text-align:center;font:14px/36px Arial;color:#105388;}
+.t-w-m-nav li.selected a{width:144px;height:35px;line-height:34px;color:#000;border:solid 1px #d0d0d0;border-bottom:none;background:#fff;}
+.t-w-m-nav li a:hover{color:#000;}
+/*
+--------- Search Page --------- */
+.search-page-block h1{margin-bottom:15px;font:24px/21px Georgia;color:#252525;}
+.search-page-content{position:relative;padding:1px;border:solid 1px #cdcdce;border-bottom:solid 1px #115891;}
+.search-page-inner{height:84px;padding:12px 0 10px;background:#f2f2f2;overflow:hidden;}
+.search-page-form{width:605px;margin:0 auto;}
+.search-page-form p{padding:9px 0;}
+.search-page-field{width:490px;}
+.search-page-field.blur{width:490px;height:33px;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.search-page-button{float:right;}
+.search-results-number{margin-bottom:30px;padding:24px 0 28px;text-align:center;font:24px Georgia;color:#252525;border-bottom:solid 1px #d0d0d0;}
+.search-results-number span{color:#105388;}
+.advanced-search{padding-right:18px;font:12px Arial;color:#105388;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 88px -1505px;}
+.advanced-search.selected/*,.advanced-search:hover*/{background-position:88px -1447px;}
+.from-date-field,.to-date-field{float:left;width:105px;margin-right:20px;padding:0 4px;font:14px Arial;background:#fff url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 63px -1465px;border-radius:0;}
+.from-date-field.blur,.to-date-field.blur{height:34px;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;border-radius:2px 2px 1px 1px;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.search-rubrics{float:left;width:150px;height:34px;margin-right:20px;padding-left:8px;font:14px/34px Arial;color:#666;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;background:#fff url("http://m.netinfo.bg/vesti/images/vesti-sprite_02.png") no-repeat 102px -1438px;border-radius:2px 2px 1px 1px;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.search-in{float:left;width:145px;height:34px;padding-left:8px;font:14px/34px Arial;color:#666;border:solid 1px #e6e6e6;border-top:solid 1px #b5b5b5;border-bottom:none;background:#fff url("http://m.netinfo.bg/vesti/images/vesti-sprite_02.png") no-repeat 97px -1438px;border-radius:2px 2px 1px 1px;box-shadow:inset 0 1px 0 0 #e6e6e6;}
+.search-list{display:none;position:absolute;top:149px;left:294px;width:156px;/*height:179px;*/padding:1px;border:solid 1px #e6e6e6;border-top:none;background:#fff;overflow:hidden;z-index:1;}
+.search-in-list{left:474px;width:151px;}
+.search-list li{display:block;}
+.search-list li a{display:block;height:30px;padding-left:8px;font:13px/29px Arial;color:#115891;background:#f2f2f2;text-shadow:1px 1px #fff;}
+.search-list li.selected a,.search-list li a:hover{color:#2f2f2f;background:#e7e7e7;}
+/*
+--------- Multimedia Page --------- */
+.multimedia-header{height:50px;margin-bottom:20px;border-bottom:solid 1px #e1e1e1;}
+.multimedia-header h1{float:left;font:24px/49px Georgia;color:#3a3a3a;}
+.nav-multimedia{float:right;}
+.nav-multimedia ul li{float:left;height:50px;border-left:solid 1px #e1e1e1;}
+.nav-multimedia ul li a{display:block;position:relative;height:50px;margin:0 -1px;padding:0 18px;font:14px/51px Arial;color:#105388;border-bottom:solid 1px #e1e1e1;transition:border-color 0.5s;}
+.nav-multimedia ul li.selected a,.nav-multimedia ul li a:hover{color:#303030;border-bottom:solid 1px #115891;}
+.multimedia-content{margin-bottom:10px;overflow:hidden;}
+.multimedia{float:left;width:305px;margin:0 32px 30px 0;}
+.more-multimedia{overflow:hidden;}
+.more-multimedia .heading-1{margin-bottom:0;}
+.multimedia.small{width:205px;margin:20px 20px 0 0;}
+.multimedia.third{margin-right:0;}
+.multimedia .img-link{display:block;position:relative;height:179px;}
+.multimedia.small .img-link{height:126px;}
+.multimedia .img-link .video-icon{position:absolute;top:0px;left:0px;width:45px;height:45px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -100px -291px;}
+.multimedia.selected .img-link .video-icon{background-position:-145px -291px;}
+.multimedia .img-link .photo-icon{position:absolute;top:0px;left:0px;width:45px;height:45px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -190px -291px;}
+.multimedia.selected .img-link .photo-icon{background-position:-235px -291px;}
+.multimedia.small .img-link .video-icon{position:absolute;top:0px;left:0px;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat 0 -337px;}
+.multimedia.small.selected .img-link .video-icon{background-position:-35px -337px;}
+.multimedia.small .img-link .photo-icon{position:absolute;top:0px;left:0px;width:35px;height:35px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -70px -337px;}
+.multimedia.small.selected .img-link .photo-icon{background-position:-105px -337px;}
+/*.video-content .video.selected .img-link .video-icon{background-position:-212px -242px;}*/
+.multimedia h2 a,.multimedia h3 a{display:block;height:57px;padding:7px 10px 0;font:15px/17px Georgia;color:#252525;border-bottom:solid 1px #f2f2f2;background:#f2f2f2;overflow:hidden;text-shadow:1px 1px #fff;transition:border-color 0.5s;}
+.multimedia h3 a{font-size:13px;line-height:16px;}
+.multimedia h2 a span,.multimedia h3 a span{display:block;overflow:hidden;}
+.multimedia h2 a .time-posted,.multimedia h3 a .time-posted{float:left;margin-right:9px;font:italic 11px Georgia;color:#838383;text-shadow:1px 1px #fff;}
+.multimedia h2 a .seen,.multimedia h3 a .seen{float:left;height:14px;margin-right:9px;padding-left:20px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -157px 3px;text-shadow:1px 1px #fff;}
+.multimedia.selected h2 a,.multimedia.selected h3 a{color:#105388;border-bottom:solid 1px #105388;background:#e7e7e7;}
+.most-w-c-nav{margin-bottom:10px;}
+.most-w-c-nav ul{height:35px;border-bottom:solid 1px #d0d0d0;}
+.most-w-c-nav li{float:left;}
+.most-w-c-nav li a{display:block;width:146px;height:35px;text-align:center;font:14px/36px Arial;color:#105388;}
+.most-w-c-nav li.selected a{width:144px;height:35px;line-height:34px;color:#000;border:solid 1px #d0d0d0;border-bottom:none;background:#fff;}
+.most-w-c-nav li a:hover{color:#000;}
+#most-commented{display:none;}
+.multimedia-categories{clear:both;position:relative;/*padding-bottom:29px;*/overflow:hidden;}
+.multimedia-categories h2{margin-bottom:18px;padding-bottom:15px;border-bottom:solid 1px #d0d0d0;}
+.multimedia-categories h2 a{padding-right:19px;font:24px Georgia;color:#105388;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 100% -1495px;}
+.multimedia-categories h2.selected a,.multimedia-categories h2 a:hover{background-position:100% -1439px;}
+.multimedia-sort{margin-bottom:18px;overflow:hidden;}
+.multimedia-sort-title{float:left;margin-right:10px;font:14px Arial;color:#8c8c8c;}
+.multimedia-sort .selected{float:left;font:bold 14px Arial;color:#2f2f2f;}
+.multimedia-sort a{float:left;font:14px Arial;color:#105388;}
+.multimedia-sort .sep{float:left;position:relative;top:-3px;width:1px;height:18px;padding:0 11px;color:#d0d0d0;}
+.multimedia-categories .paging.bottom{clear:both;border-top:none;}
+.multimedia-categories-list{display:none;position:absolute;top:32px;left:0;width:220px;padding:1px;border:solid 1px #d0d1d2;background:#fff;overflow:hidden;z-index:1;}
+.multimedia-categories-list li{display:block;}
+.multimedia-categories-list li a{display:block;height:30px;padding-left:8px;font:14px/29px Arial;color:#115891;background:#f2f2f2;text-shadow:1px 1px #fff;}
+.multimedia-categories-list li.selected a,.multimedia-categories-list li a:hover{color:#2f2f2f;background:#e7e7e7;}
+.paging-list-li{float:left;width:359px;height:25px;border-right:solid 1px #d0d0d0;border-left:solid 1px #d0d0d0;}
+.paging-list-2{float:left;position:relative;top:-1px;left:50%;}
+.paging-list-2 li{float:left;position:relative;right:50%;padding:0 2px 0 3px;}
+.paging-list-2 li a,.paging-list-2 li span{display:block;width:26px;height:25px;text-align:center;font:12px/28px Arial;color:#252525;}
+.paging-list-2 li.selected a,.paging-list-2 li.selected span,.paging-list-2 li a:hover{border-bottom:solid 1px #3e739d;background:#e7e7e7;}
+/*
+@media only screen and (max-width: 1280px){
+    body{background:#f9baf2;}
+    .wrapper{width:1000px}
+    .main-content{width:700px;}
+}
+*/
+/*-------------Article window----------------------*/
+.container.article-window{padding:0;padding-bottom:60px;width:1000px;margin:30px auto;background:#fff;box-shadow:0 0 8px #bbb; position:relative;}
+.foto-window{width:1000px;margin:30px auto;background:#fff;box-shadow:0 0 8px #bbb;position:relative;padding:0;padding-bottom:60px;}
+.article-close-wrap{position:fixed;width:1000px;z-index:100000;}
+.article-close{width:52px;height:52px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -52px;cursor:pointer;display:block;position:absolute; top:18px;right:-25px;z-index:333333}
+.article-close:hover{background-position:0 0;}
+.article-content{width:980px;margin:0 auto;}
+.article-content header{position:relative;}
+.article-content h1{font:bold 30px/30px Georgia;padding-bottom:18px;padding-top:25px;width:840px;}
+.article-content hgroup h2{font:15px/18px Arial;color:#838383;padding-bottom:20px;width:840px;}
+.article-info{height:36px;margin-bottom:20px;border-top:1px solid #cfcfcf; border-bottom:1px solid #cfcfcf;font:italic 12px Georgia;line-height:36px;}
+.article-info-left{float:left;}
+.article-info-left a{color:#105388;}
+.article-info-left a:hover{text-decoration:underline}
+.article-info-arrow{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -229px;width:6px; height:10px;display:inline-block;margin:0 6px;position:relative;top:1px;}
+.article-info-right{float:right;position:relative;}
+.article-info-left time{font-size:11px;display:inline;padding-left:10px;}
+.foto-window .article-info-left time{padding-left:0;}
+.article-info-left time span{color:#838383;}
+.article-info-right span, .article-info-right a{color:#666;float:left;display:block;line-height:26px;margin-top:5px;}
+.article-info-right a:hover{color:#105388;}
+.article-info-right span.seen{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0 -197px;padding-left:22px;}
+.article-info-right a.comments{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -100px -198px;padding-left:22px;}
+.article-info-right a.share{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -216px -198px;padding-left:22px;}
+.article-info-right a.share:hover{text-decoration:none;color:#105388;}
+.article-info-right .separator{width:1px;float:left; height:26px;display:inline-block;background:#b6b6b7; margin:0 10px;margin-top:5px;}
+.share-list{display:none;position:absolute;top:27px;right:-9px;width:172px;padding-bottom:27px;background:url(http://m.netinfo.bg/vesti/images/share-list-bottom.png) no-repeat bottom;z-index:1000;}
+.share-list-inner{background:url(http://m.netinfo.bg/vesti/images/share-list-middle.png) repeat-y;}
+.share-list-top{position:relative;width:130px;height:17px;margin:0 auto 9px;padding:5px 0 7px;border-bottom:solid 1px #b6b6b7;}
+.share-list .share-list-title{margin:0;font:14px Arial;color:#252525;}
+.share-list .share-list-close{float:right;position:relative;top:2px;width:14px;height:14px;margin:0;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -258px -223px;}
+.share-list .share-list-close:hover{background-position:-258px -237px;}
+.share-list .share-list-bullet{float:none;position:relative;top:0;left:131px;width:19px;height:10px;margin:0;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -237px -223px;}
+.share-list ul{width:130px;margin:0 auto;}
+.share-list ul li{display:block;height:29px;padding:6px 0;}
+.share-list ul li a{float:none;height:29px;margin:0;padding-left:40px;font:12px/28px Arial;color:#000;}
+.share-list ul li a:hover{text-decoration:none;color:#105388;}
+.share-list ul li.share-fb a{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -15px -758px;}
+.share-list ul li.share-fb a:hover{background-position:-15px -787px;}
+.share-list ul li.share-gplus a{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -15px -816px;}
+.share-list ul li.share-gplus a:hover{background-position:-15px -845px;}
+.share-list ul li.share-linkedin a{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -15px -2016px;}
+.share-list ul li.share-linkedin a:hover{background-position:-15px -2045px;}
+.share-list ul li.share-twitter a{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -15px -2074px;}
+.share-list ul li.share-twitter a:hover{background-position:-15px -2103px;}
+/*Foto Gallery*/
+.foto-window .gallery{width:976px;padding:1px;margin-top:20px; border:1px solid #d5d5d6;}
+.foto-window .gallery .big-img-holder{position:relative;height:734px;width:976px;}
+.foto-window .gallery img{display:block;}
+.foto-window .photo-image-inner figure{font-size:0;height:734px;text-align:center;width:976px;}
+.foto-window  .photo-image-inner{background:none repeat scroll 0 0 #f2f2f2;height:734px;position:relative;width:976px;}
+.foto-window .photo-prev,.foto-window .photo-next{width:488px;height:734px;}
+.photo-prev-frame,.photo-next-frame{width:50px;}
+.foto-window .photo-prev-frame,.foto-window .photo-next-frame{width:50px;}
+.foto-window .photo-prev span,.foto-window .photo-next span{top:310px;}
+.foto-window .photo-more-prev{top:313px;width:25px;height:43px;background-position:-185px -242px;}
+.foto-window .photo-more-prev:hover{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -210px -242px;}
+.foto-window .photo-nav{height:74px;margin:0 auto;position:relative;width:946px;}
+.foto-window .photo-nav-inner{width:946px;}
+.foto-window .photo-nav ul li{padding:20px 0 0 14px;}
+.foto-window .photo-nav ul li.first{padding-left:0;}
+.foto-window .photo-nav ul li.selected{background-position:46px 0;}
+.foto-window .photo-nav ul li.first.selected{background-position:34px 0;}
+.foto-window .photo-image{height:734px;padding:1px;width:976px;}
+.foto-window .photo-more{position:relative;top:116px;padding:16px 109px 48px 108px;border:solid 1px #ccc;background:#dfdfdf;}
+.foto-window .photo-more-title{margin-bottom:20px;}
+.foto-window .photo-reload{position:relative;top:155px;}
+.foto-window .more-info {height:60px; padding-left:17px;}
+.foto-window .foto-number {font:30px/55px Georgia;width:85px;color:#666;float:left;margin-right:8px;}
+.foto-window .foto-number .first{float:left;width:34px;text-align:right;}
+.foto-window .foto-number .second {color:#252525;}
+.foto-window .pause,.foto-window .play,.foto-window .hidedesc { height:28px; float:left;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat;cursor:pointer;margin-right:3px;margin-top:17px;}
+.foto-window .hidedesc {padding-left:27px;font:12px/26px Arial;color:#fff;text-shadow:1px 1px #090909;background-position:-142px -516px;width:111px;}
+.foto-window .hidedesc:hover {background-position:-142px -544px;}
+.foto-window .play {padding-left:24px;font:12px/26px Arial;color:#fff;text-shadow:1px 1px #090909;background-position:0 -537px;width:52px;}
+.foto-window .play:hover {background-position:0 -565px;}
+.foto-window .pause {background-position:0 -592px;}
+.foto-window .pause:hover {background-position:0 -620px;}
+.foto-window .add-this {float:right;margin:18px 13px 0 0;}
+#___plusone_0{position:relative;top:-1px;}
+.add-this .fb_edge_widget_with_comment,.add-this .addthis_toolbox,.addthis .fb_edge_widget_with_comment,.addthis .addthis_toolbox{float:left;padding:0 1px;}
+.foto-window h2 { color: #105388; font: 24px/40px Georgia;}
+.foto-window .left-column {float:left;width:655px;}
+.foto-window .more-foto ul li {float:left;width:205px; height:196px; border-bottom:1px solid #f0f0f0; background:#f0f0f0;margin-right:20px;margin-bottom:19px;}
+.foto-window .more-foto ul li h3 {font:14px Georgia; color:#252525;line-height:16px;padding:0 5px 0 9px;text-shadow:1px 1px #fff;}
+.foto-window .more-foto ul li span {font:italic 12px Georgia;color:#838383;padding-left:9px;}
+.foto-window .more-foto ul li.last {margin-right:0;}
+.foto-window .more-foto ul li:hover {border-bottom:1px solid #105388}
+.foto-window .right-column {width:305px;float:right;height:500px;}
+.foto-window .more-foto ul li {float:left;width:205px; height:206px; border-bottom:1px solid #f0f0f0; background:#f0f0f0;margin-right:20px;margin-bottom:19px;}
+.foto-window .more-foto ul li h3 {font:14px Georgia; color:#252525;line-height:16px;padding:0 5px 0 9px;text-shadow:1px 1px #fff;}
+.foto-window .more-foto ul li span {font:italic 12px Georgia;color:#838383;padding-left:9px;}
+.foto-window .more-foto ul li.last {margin-right:0;}
+.foto-window .more-foto ul li:hover {border-bottom:1px solid #105388}
+.most-watched {background:#fff;position:relative;margin-bottom:20px;}
+.most-watched header{border-bottom:solid 1px #fff;}
+.most-watched h1 {color: #105388; font: 24px/40px Georgia;padding-top:0;background:#f2f2f2; width:auto;height:40px;line-height:40px;padding-left:10px;padding-bottom:0;border-bottom:solid 1px #d0d0d0;}
+.most-watched ul {padding:0; margin:0;}
+.most-watched li {background:#f2f2f2;border-bottom:1px solid #cfcfcf;border-top:1px solid #fff;display:block;}
+.most-watched li a{display:block;height:232px;width:269px;padding:15px 18px 0 18px;background:#f2f2f2;transition:background-color 0.5s;}
+.most-watched li.last{border-bottom:none;}
+.most-watched li a:hover{background:#e7e7e7;}
+.most-watched li.first {border-top:0;}
+.most-watched li h3 {font:15px Georgia; color:#252525;line-height:17px;}
+.most-watched li a:hover h3{color:#105388;}
+.most-watched li span {color:#838383; font:italic 11px Georgia;}
+.most-watched .content-inner{width:100%;height:745px;/*margin-top:9px;*/overflow:hidden;line-height: 1;}
+.most-watched .content-inner ul{height:745px;overflow:hidden;}
+.most-watched .content-inner img {display:block;margin-bottom:7px;}
+.most-watched .content-inner .jspVerticalBar .jspCap {display:block;height:15px;}
+.most-watched .content-inner .top-shadow{top:42px;}
+.most-watched li a .photo-icon{position:absolute;top:15px;left:18px;width:45px;height:45px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -190px -291px;}
+.most-watched li a:hover .photo-icon{background-position:-235px -291px;}
+.most-watched li a .video-icon{position:absolute;top:15px;left:18px;width:45px;height:45px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -100px -291px;}
+.most-watched li a:hover .video-icon{background-position:-145px -291px;}
+/*Foto Gallery end*/
+/*video container*/
+.video-container {width:981px;padding-top:49px; background:#252525; margin-top:10px;float:left;padding-bottom:25px;margin-bottom:30px;}
+.video-container .item {width:770px;margin:0 auto;}
+.video-container .more-video ,.video-container .item .video-file {width:770px;height:434px;margin:0 auto;background:#333 url(http://m.netinfo.bg/vesti/images/gradient_video.gif) repeat-x bottom;}
+.video-container .more-video {display:none}
+.video-container .more-video .in {width:564px; margin:0 auto;padding-top:85px}
+.video-container .more-video h3 {font:18px Georgia; color:#fff;padding-bottom:17px;}
+.video-container .more-video h4 {font:13px Georgia;color:#fff;padding:3px 6px;}
+.video-container .more-video span {font:italic 11px Georgia;color:#838383;padding-left:6px; } 
+.video-container .more-video li {width:178px;padding:1px;background:#252525;floaT:left;margin:0 4px;padding-bottom:10px;}
+.video-container .more-video li:hover {background:#115891;-webkit-transition:background 0.5s;-moz-transition:background 0.5s;-o-transition:background 0.5s;transition:background 0.5s;}
+.video-container .more-video li:hover span {color:#a3c0e3;}
+.video-container .item .video-holder{border-bottom:1px solid #333333;}
+.video-container .item .description {height:36px;background:#1e1e1e;}
+.video-container .item .addthis{float:right;margin:10px 14px 0 0;}
+.video-container .item date {float:left;font:italic 11px Georgia;color:#fff;padding-left:18px;padding-top:10px;}
+.video-container .seen{float:left;position:relative;top:11px;height:14px;margin-left:12px;padding-left:20px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -27px -1611px;text-shadow:1px 0 #060606;}
+.video-container .commented{float:left;position:relative;top:11px;height:16px;margin-right:9px;padding-left:18px;font:italic 11px Georgia;color:#666;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -100px -205px;text-shadow:1px 0 #060606;}
+.video-container .description .sep{float:left;position:relative;top:5px;width:2px;height:26px;margin:0 9px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -169px -213px;}
+.video-container .look-again {width:122px; height:35px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -262px;float:left;margin: 15px 0 0 221px; cursor:pointer;}
+.video-container .look-again:hover {background-position:0px -297px;}
+.video-container h5 {font:bold 20px Georgia;color:#fff;padding:15px 0 10px 0;}
+.video-container h6 {color:#fff;}
+/*video container*/
+.article-window .article-column{width:655px;float:left;}
+.article-window .article-main-image, .article-window .article-inner-wide-image{padding-top:10px;overflow:hidden;}
+.article-window .article-main-image figcaption, .article-window .article-inner-wide-image figcaption{font:11px Arial;color:#000;display:inline;floaT:left;line-height:12px;}
+.article-window .article-main-image .image-source, .article-window .article-inner-wide-image .image-source, .image-source a{font:italic 11px Georgia;color:#7f7f7f;}
+.article-window .article-inner-wide-image{margin-top:0px;margin-bottom:10px;}
+.article-window .article-text{clear:both;padding-top:12px;}
+.article-window .article-text p{font-size:14px;line-height:19px;font-family:Arial;padding-bottom:20px;}
+.article-window .article-text a{color:#105388;font-weight:bold;}
+.article-window .article-text em,.article-window .article-text i{font-style:italic;}
+.article-window .article-text strong,.article-window .article-text b{font-weight:bold;}
+.article-window .article-text p u{text-decoration:underline;}
+.article-window .article-short-news{width:180px;float:left;margin-right:20px;}
+.article-window .article-short-news h3{font:16px Georgia; color:#000; line-height:16px;padding-bottom:10px;padding-left:10px;border-bottom:1px solid #c1c1c1; }
+.article-window .article-short-news ul{padding-bottom:10px;padding-top:10px;}
+.article-window .article-short-news li{background:url(../images/article-short-li.gif) no-repeat 0px 5px;padding-left:10px;padding-bottom:15px;line-height:14px;font:13px/16px Georgia; color:#666;}
+.article-window .article-more-news{width:178px;border:1px solid #c1c1c1; border-bottom:0;clear:left;float:left;margin-right:20px;margin-bottom:15px;}
+.article-window .article-more-news h3{font:16px Georgia;color:#000;background:#f2f2f2;height:26px;line-height:26px;padding-left:9px;text-shadow:1px 1px #fff;}
+.article-window .article-more-news li a{width:170px;display:block;border-bottom:1px solid #c1c1c1;margin-top:1px;overflow:hidden;padding-left:8px;padding-top:13px;}
+.article-window .article-more-news li a:hover{background:#e7e7e7;}
+.article-window .article-more-news li a:hover p{color:#105388;}
+.article-window .article-more-news li img{float:left;margin-right:10px;}
+.article-window .article-more-news li p{font:13px Georgia;color:#000;position:relative;top:-2px;text-shadow:1px 1px #fff;width:105px;floaT:left;padding-bottom:15px;}
+.article-window .article-more-news li span{font:italic 11px Georgia;color:#838383;display:block;margin-top:5px;}
+.article-window .article-in-image.left{float:left;margin-right:10px;margin-bottom:5px}
+.article-window .article-in-image.right{float:right;margin-left:10px;margin-bottom:5px}
+.article-window .article-in-image figcaption{font:11px Arial;color:#000;display:inline;floaT:left;line-height:12px;}
+.article-window .article-in-image .image-source{font:italic 11px Georgia;color:#7f7f7f;}
+.article-window .article-in-image{width:317px;}
+.article-window .article-after-image{width:317px;font:italic 11px Georgia;line-height:13px;padding-bottom:20px;}
+.article-window .article-after-image figcaption{display:inline;font:11px Arial;}
+.article-window .article-after-image.left{float:left;margin-right:10px;}
+.article-window .article-after-image.right{float:right;margin-left:10px;}
+.article-window .article-after-image .image-source{color:#7f7f7f;}
+.article-window .article-sources{color:#838383;font:italic 11px Georgia;line-height:12px;margin-top:9px;padding-bottom:9px;}
+.article-window .article-sources a,.article-sources span{color:#105388;font:italic  11px Georgia; text-decoration:none;}
+.article-window .article-sources a:hover{text-decoration:underline;}
+.article-window .article-sources span{color:#252525}
+.article-window .article-addthis{padding:8px 0;border-top:1px solid #d0d0d0;}
+.article-window .article-column .number-comments{float:left;position:relative;top:3px;/*height:1px;line-height:0;font-size:0;*/}
+.article-window .number-comments a{display:block;font:italic 11px Georgia;color:#666666;height:16px;line-height:16px; }
+.article-window .number-comments a:hover{color:#105388;}
+.article-window .number-comments a span{float:right;margin-left:4px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -100px -206px;padding-left:20px;}
+.article-window .article-addthis div{float:right;}
+.article-window .article-addthis div img{display:block;}
+.article-window .article-tags{background:#f2f2f2;padding:11px 13px;}
+.article-window .article-tags h4{font:16px Georgia;color:#000;float:left;text-shadow:1px 1px #fff;line-height:16px;margin-right:10px;}
+.article-window .article-tags .separator{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -338px -206px;display:inline-block; height:15px;width:2px;float:left;margin:0 6px;margin-top:2px;}
+.article-window .article-tags a{color:#105388;font:12px Arial; text-decoration:none;display:block; float:left; line-height:16px;padding-top:1px;}
+.article-window .article-tags a:hover{text-decoration:underline;}
+.article-window .article-left-column-addition{float:left;width:655px;margin-left:10px;}
+.article-window .recommended-articles{margin-bottom:16px;padding-top:24px;}
+.article-window .recommended-articles  h1{font:24px/24px Georgia;padding-bottom:7px; border-bottom:1px solid #d5d5d6;color:#353535;}
+.article-window .recommended-articles ul.left{float:left;}
+.article-window .recommended-articles ul.right{float:right;}
+.article-window .recommended-articles li{padding-top:16px;width:305px;height:73px;border-bottom:1px solid #cfcfcf;}
+.article-window .recommended-articles li.last{border-bottom:0;}
+.article-window .recommended-articles li .img{float:left;position:relative;margin-right:10px;/*margin-bottom:17px;*/font-size:0;z-index:10;}
+.article-window .recommended-articles li .img img{border:solid 1px #fff;transition:border-color 0.5s;}
+.article-window .recommended-articles li .img:hover img{border:solid 1px #105388;}
+.article-window .recommended-articles li .link{color:#252525;font:15px Georgia;line-height:16px;display:block;position:relative;top:-2px;}
+.article-window .recommended-articles li .link:hover{color:#105388;}
+.article-window .recommended-articles li .category{float:left;margin-right:6px;font:italic 12px Georgia;color:#105388;position:relative;top:4px;}
+.article-window .recommended-articles li .category:hover{text-decoration:underline;}
+.article-window .recommended-articles li .numcomments{float:left;font:italic 11px Georgia;color:#838383;position:relative;top:5px;}
+.article-window .recommended-articles li .site{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat scroll 100% -908px;font:12px Arial;padding-right:15px;color:#666;position:relative; top:-2px;}
+.article-window .adsense-block{border:1px solid #cfcfcf;margin-top:30px;padding: 2px 0 0 26px;}
+.article-comments{background:#fff;/*margin-top:30px;*/position:relative;font:13px Arial; color:#636363;margin-bottom:18px;border:1px solid #d5d5d6;}
+.article-window .article-comments{margin-bottom:0;}
+.article-comments .form-holder{background:#f2f2f2;float:left;border-bottom:1px solid #d5d5d6;}
+.article-comments .form-holder.inner-form {border-top:1px solid #d5d5d6;border-bottom:0;}
+.article-comments form{padding:0px 6px 0px 10px;}
+.article-comments .head{font:24px Georgia;color:#353535;float:left;line-height:62px;padding-left:10px;}
+.article-comments .comment-submit{width:119px;height:47px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -151px;border:0;cursor:pointer;float:right;font:15px/15px Arial;text-align:center;position:absolute; top:6px;right:6px;}
+.article-comments .comment-submit:hover{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -104px;color:#105388;}
+.article-comments .textarea-holder{padding-top:1px;background:#b5b5b5;float:left;margin:0;line-height:0;font-size:0;display:block;border:0;}
+.article-comments  textarea{width:633px;max-width:633px;min-width:633px;margin-top:0;margin-bottom:0;font:12px Arial;color:#000; float:left; border:0;line-height:13px;background:#fff;border:1px solid #e6e6e6;height:128px;min-height:128px;overflow:auto;}
+.article-comments .info-message {background:#ffffcc;border:1px solid #e8e8a0; font:12px Arial;color:#000;text-align:center;line-height:28px;clear:both;position:relative;top:4px;}
+.article-comments .caption{float:left;display:block; line-height:25px;padding-top:11px;text-shadow:1px 1px #fff;}
+.article-comments .caption.right{float:right;padding-right:25px;}
+.article-comments .article-comment-types{float:left;line-height:25px;margin-top:11px;color:#3a3a3a;text-shadow:1px 1px #fff;padding-left:8px;position:relative;}
+.article-comments .article-comment-types div{position:absolute;top:25px; left:-4px;width:92px;background:#fff; padding:1px;border:1px solid #cdcecd;display:none;}
+.article-comments .article-comment-types div a{display:block;color:#105388;;text-shadow:1px 1px #fff;height:30px;padding-left:10px;line-height:30px; background:#f2f2f2;}
+.article-comments .article-comment-types div a.selected{background:#e7e7e7;color:#2f2f2f; text-decoration:none;font-weight:bold;}
+.article-comments .article-comment-types div a:hover{background:#e7e7e7;color:#2f2f2f;}
+.article-comments .comments-number{font:24px Georgia;padding-bottom:9px;color:#353535;padding-left:10px;}
+.article-comments .article-comment-types  span{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat right -632px;padding-right:22px;display:block;cursor:pointer;display:block;}
+.article-comments .article-comment-types  span:hover{background-position:right -611px}
+.article-comments .comment-send{width:94px;height:47px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -470px;margin:0 1px 0 0;border:0;cursor:pointer;float:right;font:15px/15px Arial;text-align:center;float:right;}
+.article-comments .comment-send:hover{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -423px;color:#105388;}
+.article-comments p.info{color:#636363;font:italic 11px Arial;clear:both;line-height:16px; background:#fff;padding-left:10px;padding-top:6px;padding-bottom:26px; }
+.article-comments div.comments{background:#fff;}
+.article-comments .comments-item{padding-top:20px; padding-left:10px;background:#fff;border-top:1px solid #d5d5d6;}
+.article-comments .comments-item.highlighted{background:#fffef1;}
+.article-comments .comments-item.answer{background:#fff;margin-left:75px;}
+.article-comments .comments-item.answer.first{padding-left:85px;margin-left:0;}
+.article-comments .comments-item .info{float:left;margin-right:9px;}
+.article-comments .comments-item .info  .rating{float:left;width:41px;height:38px;border:1px solid #d0d0d0; font:14px Georgia; color:#838383; text-align:center;line-height:38px;}
+.article-comments .comments-item .info img{float:left;}
+.article-comments .comments-item .rightinfo{font:bold 13px/13px Trebuchet MS,Arial,Verdana;color:#252525;line-height:13px;position:relative; top:-5px;}
+.article-comments .comments-item .rightinfo time{font:italic 11px Georgia;color:#636363;padding-bottom:5px;}
+.article-comments .comments-item .text{clear:both;font:13px/16px Arial; color:#252525;padding-top:10px;padding-bottom:13px; padding-right:75px;overflow:hidden;}
+.article-comments .comments-item .text p{padding-bottom:10px;}
+.article-comments .comments-item .actionsrow{height:30px;}
+.article-comments .comment-box-close {width:18px;height:18px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -122px -262px; float:right;margin:20px 8px 0 0;display:block; }
+.article-comments .comments-item .show-hide-comment a{font:12px Arial;color:#105388;cursor:pointer;}
+.article-comments .comments-item .show-hide-comment span {color:#d5d5d6; margin:0 15px;cursor:text;}
+.article-comments .comments-item  a.hide {padding-left:15px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -1132px;}
+.article-comments .comments-item  a.hide,.article-comments .comments-item  p a {font:12px Arial;color:#105388;}
+.article-comments .comments-item p em {color:#949494;}
+.article-comments .back-to-top{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat right -1152px;font:10px Arial;margin:0 12px 8px 0;color:#252525;padding-right:18px;text-transform:uppercase;floaT:right;}
+.article-comments .comments-item .actionsrow .report{width:12px;height:12px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -576px;float:right;margin-right:9px;margin-top:5px;cursor:pointer;}
+.article-comments .comments-item .actionsrow:hover .report{background-position:0px -602px;}
+.article-comments .comments-item .response{height:21px;margin-right:14px;padding-top:6px;width:69px; display:block;float:left;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -517px;text-align:center; font:12px/12px Arial; color:#252525;}
+.article-comments .comments-item .response:hover{background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0px -544px;color:#105388}
+.article-comments .comments-item .actionsrow .positive, .article-window .comments-item .actionsrow .negative{width:35px;margin-right:6px;cursor:pointer;float:left;font:12px Arial;color:#252525;padding-left:20px;line-height:12px;margin-top:5px;background-image:url(http://m.netinfo.bg/vesti/images/sprite_1.png); background-repeat:no-repeat;}
+.article-comments .comments-item .actionsrow .positive{background-position:-102px -18px;}
+.article-comments .comments-item .actionsrow:hover .positive{background-position:-102px -63px;}
+.article-comments .comments-item .actionsrow .positive:hover, .article-window .comments-item .actionsrow .positive.clicked{background-position:-102px -3px!important;}
+.article-comments .comments-item .actionsrow .negative{background-position:-102px -45px;}
+.article-comments .comments-item .actionsrow .negative:hover,.article-window .comments-item .actionsrow .negative.clicked{background-position:-102px -30px!important;}
+.article-comments .comments-item .actionsrow:hover .negative{background-position:-102px -75px;}
+.article-window .previous{position:fixed; top:50%;left:0px;z-index:1000;}
+.article-window .previous-arrow{width:50px;height:90px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -1px -651px;cursor:pointer;float:left;display:block;z-index:3;position:relative;}
+.article-window .previous-arrow.selected{width:34px;background-position:-60px -651px;}
+.article-window .previous-news{float:left;margin-left:-400px;z-index:1;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat right -748px;height:90px;float:left;overflow:hidden;font:15px Gorgia;text-shadow:1px 1px #000;display:block;}
+.article-window .previous-news p{position:relative; top:-2px;padding-right:20px;color:#252525;text-shadow:0 0;}
+.article-window .previous-news span{color:#105388;font:italic 11px Georgia;text-shadow:none;}
+.article-window .previous-news a{color:#fff;width:300px;display:block;padding:19px 0 0 14px;height:70px;}
+.article-window .previous-news a img{float:left;border:1px solid #0c3f69;margin-right:9px;}
+.article-window .next{position:fixed; top:50%;right:-1px;z-index:1000;}
+.article-window .next-arrow{width:50px;height:90px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -178px -651px;cursor:pointer;float:right;z-index:3;position:relative;}
+.article-window .next-arrow.selected{background-position:-136px -651px;width:34px;}
+.article-window .next-news{float:right;position:relative;left:49px;margin-right:-400px;z-index:1;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat -16px -846px;height:90px;float:left;overflow:hidden;font:15px Gorgia;text-shadow:1px 1px #000;display:block;}
+.article-window .next-news span{color:#105388;font:italic 11px Georgia;text-shadow:none;}
+.article-window .next-news p{position:relative; top:-2px;padding-right:20px;color:#252525;text-shadow:0 0;}
+.article-window .next-news a{color:#fff;width:307px;display:block;padding:19px 41px 0 23px;height:70px;}
+.article-window .next-news a img{float:left;border:1px solid #0c3f69;margin-right:9px;}
+.article-paging{padding-top:30px;padding-bottom:24px;float:left;}
+.article-paging .pagingprev, .article-paging .pagingnext{height:25px;display:block; line-height:25px;}
+.article-paging .pagingprev{float:left;border-right:1px solid #d0d0d0;padding-right:15px;margin-left:13px;}
+.article-paging .pagingnext{float:right;border-left:1px solid #d0d0d0;padding-left:15px;margin-right:13px;}
+.article-paging a{font:14px Arial;color:#838383;height:25px;line-height:25px;display:block;}
+.article-paging a:hover{color:#105388;}
+.article-paging .pagingprev a{padding-left:27px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat left -965px;}
+.article-paging .pagingprev a:hover{background-position:left -940px}
+.article-paging .pagingnext a{padding-right:27px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat right -965px;}
+.article-paging .pagingnext a:hover{background-position:right -940px}
+.article-paging .paginglinks{width:400px;text-align:center; line-height:26px;height:26px;float:left;}
+.article-paging .paginglinks a{width:26px; height:25px;display:inline-block;font:12px Arial; line-height:25px;color:#252525;border-bottom:1px solid transperant;margin:0 2px;}
+.article-paging .paginglinks a.selected{background:#e7e7e7;border-bottom:1px solid #3e739d}
+.vesti-overlay{position:absolute;top:0;left:0;background:url(http://m.netinfo.bg/vesti/images/vesti-overlay-1.png) repeat;;z-index:10000000;}
+.vesti-overlay-inner{position:absolute;top:0;left:0;}
+.log-in-comment{display:block;position:static;margin:0 auto;}
+.vesti-overlay .log-in-block{position:relative;top:0;left:0;width:429px;padding-bottom:47px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-bottom-2.png) no-repeat bottom;}
+.vesti-overlay .log-in-block-top{width:429px;height:47px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-top-2.png) no-repeat;}
+.vesti-overlay .log-in-block-inner{padding:21px 0 29px;background:url(http://m.netinfo.bg/vesti/images/l-in-block-middle-2.png) repeat-y top;}
+.vesti-overlay .log-in-block-title{left:76px;}
+.vesti-overlay .log-in-close{position:absolute;top:30px;right:-3px;width:52px;height:52px;background:url(http://m.netinfo.bg/vesti/images/sprite_1.png) no-repeat 0 -52px;}
+/*
+--------- Developing Topics Page --------- */
+.container-2 .developing-topics-block{margin-bottom:25px;}
+.container-2 .developing-topics-content{height:98px;padding-top:15px;}
+.container-2 .first .developing-topics-content{padding-top:0;border-top:none;}
+.container-2 .developing-topics-wrapper{top:49px;height:65px;}
+.container-2 .first .developing-topics-wrapper{top:34px;}
+.developing-topics-block.developing-topics-inner{margin-top:70px;margin-bottom:0;}
+developing-topics-inner .developing-topics-content{height:108px;padding-top:0;}
+developing-topics-inner .developing-topics-wrapper{top:10px;height:98px;}
+/*
+--------- Poll Page & Poll Listing --------- */
+.container.container-poll{width:980px;padding:14px 10px 30px;}
+.container-poll .content-right{padding-top:0;}
+.container.container-poll .article-close{top:4px;right:-15px;}
+.container-poll h1{margin-bottom:21px;padding-top:9px;font:bold 30px Georgia;color:#252525;}
+.container-poll .article-info{margin-bottom:25px;}
+.container-poll .article-info-left time{padding-left:0;}
+.container-poll #pollBlock{margin-bottom:15px;}
+.container-poll .poll-content{padding:0 0 0 10px;}
+.container-poll .poll-content h3{margin-bottom:19px;font:bold 20px Georgia;}
+.container-poll .poll-content p{padding:15px 0;}
+.container-poll .poll-content label{width:auto;font-size:14px;}
+.container-poll .poll-answer{margin-bottom:4px;}
+.container-poll .poll-results-row{padding:5px 0;}
+.container-poll .poll-results-row.last{padding:15px 0;}
+.container-poll .pull-submit-button{margin-right:9px;}
+.poll-listing-page-block h1{margin-bottom:20px;padding-bottom:15px;font:24px/21px Georgia;color:#000;border-bottom:solid 1px #e5e5e5;}
+.poll-listing-page-block .articles-list.selected .article-info-block .commented{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -30px -1667px;}
+.poll-listing-page-block .paging.bottom{margin-top:87px;}
+/*
+--------- Poll List Block --------- */
+.poll-list-content{border-top:solid 1px #fff;overflow:hidden;}
+.poll-list-row{display:block;padding:0 10px;transition:background-color 0.5s;}
+.poll-list-row:hover{background:#e7e7e7;}
+.poll-list-row-inner{height:63px;padding-top:5px;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;}
+.poll-list-row.first .poll-list-row-inner{padding-top:8px;border-top:solid 1px #f2f2f2;}
+.poll-list-row.last .poll-list-row-inner{padding-bottom:2px;border-bottom:solid 1px #f2f2f2;}
+.poll-list-row:hover .poll-list-row-inner{border-top:solid 1px #fff;}
+.poll-list-row.first:hover .poll-list-row-inner{border-top:solid 1px #e7e7e7;}
+.poll-list-row h3{position:relative;top:-2px;font:15px/18px Georgia;color:#252525;text-shadow:1px 1px #fff;z-index:1;}
+.poll-list-row:hover h3{color:#115891;}
+.poll-list-row:hover .article-info-block .commented{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -30px -1667px;}
+/*
+--------- TV Program Page --------- */
+.tv-program-page-block h1{margin-bottom:15px;font:24px/21px Georgia;color:#252525;}
+.tv-program-top{position:relative;margin-bottom:19px;padding:1px;border:solid 1px #d0d1d2;}
+.tv-program-top-inner{height:54px;padding:19px 20px 0;background:#f2f2f2;overflow:hidden;}
+.choose-tv{float:left;width:175px;height:33px;padding-left:8px;font:12px/32px Arial;color:#252525;border:solid 1px #ccc;background:#fff url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 130px -1439px;}
+.choose-weekday{margin-left:29px;}
+.choose-hour{float:right;}
+.choose-tv-program:hover,.choose-weekday:hover,.choose-hour:hover{color:#105388;}
+.tv-program-list{display:none;position:absolute;top:55px;left:21px;width:181px;height:179px;padding:1px;border:solid 1px #cecfd0;border-top:none;background:#fff;overflow:hidden;z-index:4;}
+#choose-weekday-list{left:234px;height:auto;}
+#choose-hour-list{left:447px;}
+.tv-program-list li{display:block;}
+.tv-program-list li a{display:block;height:30px;padding:0 7px;font:13px/29px Arial;color:#105388;background:#f2f2f2;overflow:hidden;text-shadow:1px 1px #fff;}
+.tv-program-list li.selected a,.tv-program-list li a:hover{background:#e7e7e7;}
+.tv-program-list li.selected a{color:#252525;}
+.tv-program-list .jspVerticalBar{right:2px;}
+.tv-program-list .jspVerticalBar .jspCap{display:block;height:6px;}
+.tv-channels-list{margin:0 0 15px;overflow:hidden;}
+.tv-channels-list li{float:left;border-bottom:solid 1px #d0d0d0;}
+.tv-channels-list .all-channels{width:141px;}
+.tv-channels-list .movie-channels{width:91px;border-color:#6600e4;}
+.tv-channels-list .sport-channels{width:87px;border-color:#e30076;}
+.tv-channels-list .music-channels{width:92px;border-color:#00d69c;}
+.tv-channels-list .news-channels{width:94px;border-color:#2074ff;}
+.tv-channels-list .favorite-channels{width:150px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -24px -1694px;}
+.tv-channels-list li a{display:block;height:34px;text-align:center;font:14px/36px Arial;color:#105388;}
+.tv-channels-list li a:hover{color:#252525;}
+.tv-channels-list li.selected a{line-height:34px;color:#252525;border:solid 1px #d0d0d0;border-bottom:none;}
+.tv-channels-list li.selected{border-bottom:none;}
+.tv-channels-list .movie-channels.selected a{border-top:solid 1px #6600e4;}
+.tv-channels-list .sport-channels.selected a{border-top:solid 1px #e30076;}
+.tv-channels-list .music-channels.selected a{border-top:solid 1px #00d69c;}
+.tv-channels-list .news-channels.selected a{border-top:solid 1px #2074ff;}
+.tv-channel-info{margin-bottom:9px;padding-bottom:6px;overflow:hidden;}
+.tv-channel-info .see-all-tv-channels{float:left;position:relative;top:2px;margin-right:20px;}
+.tv-channel-info p{font:bold 14px/36px Arial;color:#252525;}
+.tv-channel-info p img{float:left;margin-right:13px;}
+.tv-channel-program{position:relative;height:851px;border:solid 1px #d0d1d2;overflow:hidden;}
+.tv-channel-program-inner{height:851px;overflow:hidden;}
+.tv-channel-program-day{height:39px;text-align:center;font:14px/40px Arial;color:#252525;border-top:solid 1px #cecfd0;background:#f2f2f2;}
+.tv-channel-program-day.first{border-top:none;}
+.tv-channel-program-row{height:60px;border-top:solid 1px #cecfd0;}
+.tv-channel-program-hour{float:left;width:75px;height:60px;text-align:center;font:italic 11px/60px Georgia;border-right:solid 1px #cecfd0;background:#f2f2f2;text-shadow:1px 1px #fff;}
+.tv-channel-program-row a{float:left;height:60px;width:561px;padding:0 8px;font:12px/62px Arial;color:#252525;text-shadow:1px 1px #fff;}
+.tv-channel-program-row a:hover{color:#105388;background:#f8f8f8;}
+.tv-channel-program .top-shadow{top:0;width:653px;}
+.tv-channel-program .bottom-shadow{bottom:0;width:653px;}
+.tv-channel-program .jspCap{display:block;height:6px;}
+.tv-program-schedule{position:relative;overflow:hidden;}
+.tv-program-channels{float:left;padding-top:38px;background:#f2f2f2;}
+.tv-program-channels ul{width:76px;border:solid 1px #cecfd0;border-bottom:none;background:#f2f2f2;}
+.tv-program-channels ul li{display:block;}
+.tv-program-channels ul li a{display:block;position:relative;width:76px;height:54px;padding-top:6px;text-transform:uppercase;text-align:center;font:10px Arial;color:#636363;border-bottom:solid 1px #cecfd0;text-shadow:1px 1px #fff;}
+.tv-program-channels ul li a:hover{color:#105388;}
+.tv-program-channels ul li a img{display:block;margin:0 auto;}
+.make-favorite{position:absolute;top:6px;right:2px;width:12px;height:11px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 0 -1703px;}
+.make-favorite.selected,.make-favorite:hover{background-position:-12px -1703px;}
+.tv-program-grid{width:576px;border-right:solid 1px #cecfd0;overflow:hidden;}
+.tv-program-grid-inner{width:4608px;position:relative;left:0;}
+.tv-program-hours-row{width:4608px;height:38px;border-bottom:solid 1px #cecfd0;background:#f2f2f2;}
+.tv-program-hours-row span{float:left;width:85px;height:38px;padding-left:10px;font:bold 14px/40px Arial;color:#252525;border-right:solid 1px #3b3b3b;}
+.tv-program-grid-row{width:4608px;height:60px;border-bottom:solid 1px #cecfd0;}
+.tv-program-grid-row a{float:left;position:relative;height:60px;font:12px/16px Arial;color:#636363;z-index:1;}
+.tv-program-grid-row a .inner{display:block;/*position:absolute;*/height:54px;padding:6px 9px 0;border-right:solid 1px #cecfd0;background:#fff;}
+/*.tv-program-grid-row a.first .inner{padding:6px 9px 0 10px;border-left:none;}*/
+.tv-program-grid-row a.news,.tv-program-grid-row a.movie,.tv-program-grid-row a.sport,.tv-program-grid-row a.music{border-right:solid 1px #cecfd0;}
+.tv-program-grid-row a.news .inner{height:53px;padding-top:5px;border:solid 1px #2074ff;}
+.tv-program-grid-row a.movie .inner{height:53px;padding-top:5px;border:solid 1px #6600e4;}
+.tv-program-grid-row a.sport .inner{height:53px;padding-top:5px;border:solid 1px #e30076;}
+.tv-program-grid-row a.music .inner{height:53px;padding-top:5px;border:solid 1px #00d69c;}
+.tv-program-grid-row a.last .inner{padding:6px 10px 0 9px;border-right:none;}
+.tv-program-grid-row a:hover{color:#105388;}
+.tv-program-grid-row .title{display:block;height:32px;overflow:hidden;}
+.tv-program-grid-row a .hour{display:block;font:italic 11px Georgia;color:#000;}
+.tv-program-hours-prev{position:absolute;top:0;left:0;width:78px;height:38px;background:#dedede url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 0 -1876px;}
+.tv-program-hours-next{position:absolute;top:0;right:0;width:78px;height:38px;background:#dedede url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat 4px -1942px;}
+.tv-program-hours-prev:hover{background-position:0 -1909px;}
+.tv-program-hours-next:hover{background-position:4px -1975px;}
+.tv-program-prev{position:absolute;top:50%;left:78px;width:50px;height:94px;margin-top:-47px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -187px -604px;z-index:4;}
+.tv-program-next{position:absolute;top:50%;right:1px;width:50px;height:94px;margin-top:-47px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -187px -698px;z-index:4;}
+.tv-program-prev:hover{background-position:-216px -792px;}
+.tv-program-next:hover{background-position:-216px -886px;}
+.now{position:absolute;top:0;height:100%;z-index:10;}
+.now-title{position:absolute;top:28px;height:11px;padding:0 4px;white-space:nowrap;font:10px/9px Arial;color:#fff;background:#3b3b3b;}
+.now-line{position:absolute;top:38px;left:28px;width:2px;height:100%;background:#3b3b3b;}
+.tv-program-shadow-left{position:absolute;top:39px;left:78px;width:10px;height:100%;background:url(http://m.netinfo.bg/vesti/images/tv-shadow-left.png) repeat-y;z-index:3;}
+.tv-program-shadow-right{position:absolute;top:39px;right:1px;;width:10px;height:100%;background:url(http://m.netinfo.bg/vesti/images/tv-shadow-right.png) repeat-y;z-index:3;}
+.tv-program-source{float:left;position:relative;top:1px;}
+.tv-program-source span{font:10px Arial;color:#636363;}
+.tv-program-source a{text-decoration:none;font:10px Arial;color:#105388;}
+.tv-program-source a:hover{text-decoration:underline;}
+.tv-program-legend{float:right;position:relative;top:4px;}
+.tv-program-legend span{font:14px Arial;color:#252525;}
+.tv-program-legend ul{display:inline;}
+.tv-program-legend li{display:inline;margin-left:18px;padding-left:17px;}
+.tv-program-legend li a{font:14px Arial;color:#105388;}
+.tv-program-legend li.selected a,.tv-program-legend li a:hover{color:#252525;}
+.tv-program-legend .movie-channels{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -37px -1728px;}
+.tv-program-legend .sport-channels{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -37px -1747px;}
+.tv-program-legend .music-channels{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -37px -1766px;}
+.tv-program-legend .news-channels{background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -37px -1785px;}
+/*
+--------- Avtora News Block --------- */
+.avtora-news-block{position:relative;margin-bottom:30px;border:solid 1px #cfcfcf;}
+.avtora-news-block .heading-2-link:hover{background:none;}
+.avtora-news-content{position:relative;}
+.avtora-news-row{display:block;width:305px;}
+.avtora-news-row:hover{background:#dedede;}
+.avtora-news-row:hover .avtora-news-row-inner{border-top:solid 1px #dedede;}
+.avtora-news-row-inner{width:285px;height:58px;margin:0 auto;padding-top:6px;border-top:solid 1px #fff;border-bottom:solid 1px #cfcfcf;}
+.avtora-news-row.last .avtora-news-row-inner{border-bottom:none;}
+.avtora-news-row img{float:left;margin-right:13px;border:solid 1px #fff;}
+.avtora-news-row:hover img{border:solid 1px #105388;}
+.avtora-news-row h3{position:relative;top:-2px;font:15px/18px Georgia;color:#252525;overflow:hidden;text-shadow:1px 1px #fff;}
+.avtora-news-row:hover h3{color:#105388;}
+.avtora-news-source{position:absolute;bottom:-15px;left:-1px;}
+.avtora-news-source span{font:10px Arial;color:#636363;}
+.avtora-news-source a{text-decoration:none;font:10px Arial;color:#105388;}
+.avtora-news-source a:hover{text-decoration:underline;}
+/*
+--------- Application Page --------- */
+.apps-page-block h1{margin-bottom:15px;font:24px/21px Georgia;color:#000;}
+.apps{padding:15px 0 7px 0;border:solid 1px #d0d1d2;}
+.iphone-app{margin-bottom:40px;}
+.apps-img{display:block;margin-bottom:8px;font-size:0;}
+.apps h2{width:610px;margin:0 auto 16px;padding:0 0 15px 3px;font:bold 16px Georgia;color:#252525;border-bottom:solid 1px #cdcdce;text-shadow:1px 1px #fff;}
+.apps-download-button{margin:0 auto;}
+/*
+--------- Adwise Right Block --------- */
+.adwise-right{margin-bottom:20px;padding-left:2px;font-size:0;}
+
+/*
+--------- 404 Error Page --------- */
+.container.error-page { margin-top:0px; padding-top:360px; min-height:180px; background:#fff url(http://m.netinfo.bg/vesti/images/error_404.jpg) no-repeat center 65px;}
+.error-page-txt {text-align:center; font:italic 16px/24px Georgia, serif; color: #838383;}
+.error-page-txt a { }
+.error-page-txt a:hover { text-decoration:underline}
+
+
+/*
+--------- Footer --------- */
+/*
+--------- Social Footer --------- */
+.footer-social{height:80px;border-bottom:solid 1px #c8c7c7;background:#e2e2e2;}
+.footer-social-inner{position:relative;width:1000px;height:80px;margin:0 auto;background:#e2e2e2;z-index:9;}
+.footer-social-inner ul{float:left;position:relative;top:20px;padding-left:9px;/*left:50%;*/}
+.footer-social-inner ul li{float:left;position:relative;/*right:50%;*/margin-right:75px;}
+.footer-social-inner ul li.last{margin-right:0;}
+.footer-social-inner ul li a{display:block;font:11px/38px Arial;color:#807f7f;opacity:1;transition:color 0.5s,opacity 0.5s;}
+.footer-social-inner ul li a:hover{opacity:0.7;color:#115891;}
+.footer-social-inner .mobile{height:40px;padding-left:40px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -14px -979px;}
+.footer-social-inner .mobile:hover{background-position:-14px -1019px;}
+.footer-social-inner .twitter{height:36px;padding-left:62px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -228px -146px;}
+.footer-social-inner .twitter:hover{background-position:-228px -182px;}
+.footer-social-inner .facebook{height:37px;padding-left:28px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -262px -680px;}
+.footer-social-inner .facebook:hover{background-position:-262px -717px;}
+.footer-social-inner .rss{position:relative;top:5px;height:29px;padding-left:43px;line-height:29px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -11px -1137px;}
+.footer-social-inner .rss:hover{background-position:-11px -1166px;}
+.footer-social-inner .subscribe{height:38px;padding-left:43px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -248px -604px;}
+.footer-social-inner .subscribe:hover{background-position:-248px -642px;}
+.footer-social-inner .applications{height:39px;padding-left:44px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_02.png) no-repeat -9px -1059px;}
+.footer-social-inner .applications:hover{background-position:-9px -1098px;}
+/*
+--------- Main Footer --------- */
+.footer-main{height:167px;border-top:solid 1px #f7f7f7;background:#e7e7e7;}
+.footer-main-inner{position:relative;width:980px;margin:0 auto;padding:17px 10px 0;overflow:hidden;z-index:9;}
+.footer-sites-left{float:left;}
+.footer-sites-title{margin-bottom:15px;text-transform:uppercase;font:10px Arial;color:#252525;}
+.footer-sites{float:left;padding-right:48px;}
+.footer-sites ul{width:120px;overflow:hidden;}
+.footer-sites li{display:block;margin-bottom:1px;}
+.footer-sites li a{/*float:left;*/font:12px Arial;color:#807f7f;}
+.footer-sites li a:hover{color:#105388;}
+/*.footer-sites li .sep{float:left;position:relative;top:3px;height:11px;margin-right:7px;padding-left:7px;border-right:solid 1px #bcbcbc;}*/
+.footer-sites-right{float:right;position:relative;top:-2px;}
+.footer-sites-right ul{overflow:hidden;width:278px;}
+.footer-sites-right li{float:left;}
+.footer-sites-right li a{float:left;font:12px/18px Arial;color:#807f7f;}
+.footer-sites-right li a:hover{color:#105388;}
+.footer-sites-right li .sep{float:left;position:relative;top:3px;height:11px;margin-right:7px;padding-left:7px;border-right:solid 1px #bcbcbc;}
+.copyright-reserved{clear:both;margin-top:39px;overflow:hidden;}
+.netinfo-logo-bottom{float:left;width:63px;height:39px;margin-right:10px;background:url(http://m.netinfo.bg/vesti/images/vesti-sprite_01-01.png) no-repeat -118px -574px;}
+.copyright{display:block;font:12px Arial;color:#252525;}
+.all-rights-reserved{font:12px Arial;color:#807f7f;}
+.all-rights-reserved:hover{color:#105388;}
+/*
+--------- FANCY BOX --------- */
+.fancybox-wrap,.fancybox-skin,.fancybox-outer,.fancybox-inner,.fancybox-image,.fancybox-wrap iframe,.fancybox-wrap object,.fancybox-nav,.fancybox-nav span,.fancybox-tmp{padding:0;margin:0;border:0;outline:0;vertical-align:top}
+.fancybox-wrap{position:absolute;top:0;left:0;z-index:16000020}
+.fancybox-skin{position:relative;background:#f9f9f9;color:#444;text-shadow:none;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.fancybox-opened{z-index:16000030}
+.fancybox-opened .fancybox-skin{-webkit-box-shadow:0 10px 25px rgba(0,0,0,0.5);-moz-box-shadow:0 10px 25px rgba(0,0,0,0.5);box-shadow:0 10px 25px rgba(0,0,0,0.5)}
+.fancybox-outer,.fancybox-inner{position:relative}
+.fancybox-inner{overflow:hidden}
+.fancybox-type-iframe .fancybox-inner{-webkit-overflow-scrolling:touch}
+.fancybox-error{color:#444;font:14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;margin:0;padding:15px;white-space:nowrap}
+.fancybox-image,.fancybox-iframe{display:block;width:100%;height:100%}
+.fancybox-image{max-width:100%;max-height:100%;-webkit-border-radius:4px;-moz-border-radius:4px;border-radius:4px}
+.fancybox-close,.fancybox-prev span,.fancybox-next span{background-image:url('../images/fancybox_sprite.png')}
+#fancybox-loading{position:fixed;top:50%;left:50%;margin-top:-22px;margin-left:-22px;background-position:0 -108px;opacity:.8;cursor:pointer;z-index:16000060}
+#fancybox-loading div{width:44px;height:44px;background:url('../images/fancybox_loading.gif') center center no-repeat}
+.fancybox-close{position:absolute;top:-18px;right:-18px;width:36px;height:36px;cursor:pointer;z-index:16000040}
+.fancybox-nav{position:absolute;top:0;width:50%;height:100%;cursor:pointer;text-decoration:none;background:transparent url('../images/blank.gif');-webkit-tap-highlight-color:rgba(0,0,0,0);z-index:16000040}
+.fancybox-prev{left:0}
+.fancybox-next{right:0}
+.fancybox-nav span{position:absolute;top:50%;width:36px;height:34px;margin-top:-18px;cursor:pointer;z-index:16000040;visibility:hidden}
+.fancybox-prev span{left:10px;background-position:0 -36px}
+.fancybox-next span{right:10px;background-position:0 -72px}
+.fancybox-nav:hover span{visibility:visible}
+.fancybox-tmp{position:absolute;top:-99999px;left:-99999px;visibility:hidden;max-width:99999px;max-height:99999px;overflow:visible !important}
+.fancybox-lock{overflow:hidden !important;width:auto}
+.fancybox-lock body{overflow:hidden !important}
+.fancybox-lock-test{overflow-y:hidden !important}
+.fancybox-overlay{position:absolute;top:0;left:0;overflow:hidden;display:none;z-index:16000010;background:url('../images/fancybox_overlay.png')}
+.fancybox-overlay-fixed{position:fixed;bottom:0;right:0}
+.fancybox-lock .fancybox-overlay{overflow:auto;overflow-y:scroll}
+.fancybox-title{visibility:hidden;font:normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;position:relative;text-shadow:none;z-index:16000050}
+.fancybox-opened .fancybox-title{visibility:visible}
+.fancybox-title-float-wrap{position:absolute;bottom:0;right:50%;margin-bottom:-35px;z-index:16000050;text-align:center}
+.fancybox-title-float-wrap .child{display:inline-block;margin-right:-100%;padding:2px 20px;background:transparent;background:rgba(0,0,0,0.8);-webkit-border-radius:15px;-moz-border-radius:15px;border-radius:15px;text-shadow:0 1px 2px #222;color:#FFF;font-weight:bold;line-height:24px;white-space:nowrap}
+.fancybox-title-outside-wrap{position:relative;margin-top:10px;color:#fff}
+.fancybox-title-outside-wrap a {color: #1053ee;}
+.fancybox-title-outside-wrap a:visited {color: #105388;}
+.fancybox-title-inside-wrap{padding-top:10px}
+.fancybox-title-over-wrap{position:absolute;bottom:0;left:0;color:#fff;padding:10px;background:#000;background:rgba(0,0,0,.8)}
+.fancybox-title strong {font-weight:bold}
+#fancybox-thumbs { position: fixed; left: 0px; width: 100%; overflow: hidden; z-index: 16000105; }
+#fancybox-thumbs.bottom { bottom: 2px;}
+#fancybox-thumbs.top { top: 2px;}
+#fancybox-thumbs ul { position: relative; list-style: none; margin: 0; padding: 0; }
+#fancybox-thumbs ul li { float: left; padding: 1px; opacity: 0.7; }
+#fancybox-thumbs ul li.active { opacity: 0.75; padding: 0; border: 1px solid #fff; }
+#fancybox-thumbs ul li:hover { opacity: 1; }
+#fancybox-thumbs ul li a { display: block; position: relative; overflow: hidden; border: 1px solid #222; background: #111; outline: none; }
+#fancybox-thumbs ul li img { display: block; position: relative; border: 0; padding: 0; }
+#fancybox-buttons { position: fixed; left: 0; width: 100%; z-index: 16000105; }
+#fancybox-buttons.top { top: 10px; }
+#fancybox-buttons.bottom { bottom: 10px; }
+#fancybox-buttons ul { display: block; width: 170px; height: 30px; margin: 0 auto; padding: 0; list-style: none; background: #111; -webkit-box-shadow: 0 1px 3px #000,0 0 0 1px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.05); -moz-box-shadow: 0 1px 3px #000,0 0 0 1px rgba(0,0,0,.7),inset 0 0 0 1px rgba(255,255,255,.05); background: #111 -webkit-gradient(linear,0% 0%,0% 100%,from(rgba(255,255,255,.2)),color-stop(.5,rgba(255,255,255,.15)),color-stop(.5,rgba(255,255,255,.1)),to(rgba(255,255,255,.15))); background: #111 -moz-linear-gradient(top,rgba(255,255,255,.2) 0%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.1) 50%,rgba(255,255,255,.15) 100%); border-radius: 3px; }
+#fancybox-buttons ul li { float: left; margin: 0; padding: 0; }
+#fancybox-buttons a { display: block; width: 30px; height: 30px; text-indent: -9999px; background-image: url('../images/fancybox_buttons.png'); background-repeat: no-repeat; outline: none; }
+#fancybox-buttons a.btnPrev { width: 32px; background-position: 6px 0; }
+#fancybox-buttons a.btnNext { background-position: -33px 0; border-right: 1px solid #3e3e3e; }
+#fancybox-buttons a.btnPlay { background-position: 0 -30px; }
+#fancybox-buttons a.btnPlayOn { background-position: -30px -30px; }
+#fancybox-buttons a.btnToggle { background-position: 3px -60px; border-left: 1px solid #111; border-right: 1px solid #3e3e3e; width: 35px }
+#fancybox-buttons a.btnToggleOn { background-position: -27px -60px; }
+#fancybox-buttons a.btnClose { border-left: 1px solid #111; width: 38px; background-position: -57px 0px; }
+#fancybox-buttons a.btnDisabled { opacity : 0.5; cursor: default; }
+.watermark {background: url('../images/vesti-logo-white.png') no-repeat scroll right bottom transparent;bottom: 5px;height: 100%;position: absolute;right: 5px;width: 100%;}
+.fancybox-content {display:none}
+/*
+--------- Clearfix --------- 
+.clearfix:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0;}
+.clearfix{display:inline-block;}
+html[xmlns] .clearfix{display:block;}
+* html .clearfix{height:1%;} */
+.clearfix:after
+{
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+*+html .clearfix { display: inline-block; }
+* html .clearfix { height: 0; }
+/* 
+-------------- ie fix -------------- */
+.lt-ie8 .logged-in a,.lt-ie7 .logged-in a{}
+.lt-ie8 .netinfo-sites-list li a,.lt-ie7 .netinfo-sites-list li a{line-height:26px;}
+.lt-ie9 .logged-in img{float:right;}
+.lt-ie8 .logged-in img,.lt-ie7 .logged-in img{float:none;}
+.lt-ie9 .input-field,.lt-ie8 .input-field,.lt-ie7 .input-field{line-height:32px;}
+.lt-ie8 .log-in-block form p label,.lt-ie7 .log-in-block form p label{top:1px;}
+.lt-ie10 input.button-1,.lt-ie9 input.button-1,.lt-ie8 input.button-1,.lt-ie7 input.button-1{padding-bottom:2px;}
+.lt-ie7 .make-home-page,.lt-ie8 .make-home-page,.lt-ie9 .make-home-page,.lt-ie10 .make-home-page,.ie10 .make-home-page{display:block;}
+.lt-ie7 .logged-in-block,.lt-ie8 .logged-in-block,.lt-ie9 .logged-in-block,.lt-ie10 .logged-in-block,.ie10 .logged-in-block{right:20px;}
+/*
+--------- Ie7 --------- */
+/*
+--------- Top and Bottom Banner Block --------- */
+.lt-ie8 .bannerPosition img,
+.lt-ie8 .bannerPosition embed,
+.lt-ie8 .bannerPosition object,
+.lt-ie8 .bannerPosition iframe{ margin: 28px auto 0; }
+/*
+--------- Article Arrow Navigation --------- */
+.lt-ie8 .next .next-news,
+.lt-ie8 .previous .previous-news { display: none !important; }
+
+.lt-ie8 .next,
+.lt-ie8 .previous { width: 50px; }
+
+.lt-ie8 .article-window .next-arrow.selected{ background-position: -178px -651px; width: 50px; }
+.lt-ie8 .article-window .previous-arrow.selected { width: 50px; background-position: -1px -651px; }
+
+.lt-ie8 .article-info-arrow { display: inline; margin-left: 10px !important; }
+/*
+--------- Search Results Button --------- */
+.lt-ie8 .search-page-button { width: 90px; float: right; }
+.lt-ie8 .search-page-field { float: left; }
+/*
+--------- Search Block --------- */
+.lt-ie8 .search-block { float: left; width: 274px; margin-right: 2px; }
+
+.lt-ie8 .header-top-inner { z-index: 2; }
+/*
+--------- Comments Info Block --------- */
+.lt-ie8 .article-addthis div { width: 290px;  }
+.lt-ie8 .article-addthis div div { width: auto;  }
+.lt-ie8 .article-addthis .number-comments { width: 130px; }
+/*
+--------- Comments --------- */
+.lt-ie8 .article-comments .comments-item .info { width: 90px; height: 40px; }
+.lt-ie8 .article-comments .comments-item.answer .info { width: 40px; }
+.lt-ie8 .article-comments .comments-item .rightinfo { width: 200px; height: 40px; float: left; }
+/* 
+  -------------- select city by keyboard arrows using ----------------- */
+.search-city-result-list{background: #d9d9d9;padding: 1px 0 0;}
+.search-city-result-list li a.selected,.search-city-result-list li a:hover{background: #bbb;}
+.search-city-result-list li a{color: #000;font: 12px Arial;text-decoration: none;display: block;padding: 3px 8px;white-space: nowrap;overflow:hidden;}
+.search-city-result-list li{display: block;}

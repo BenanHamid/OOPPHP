@@ -45,7 +45,7 @@ table {
 }
 
 body{
-	background-image:url(../img/bg.jpg);
+	background-image:url(img/bg.jpg);
 }
 p{
 	overflow:auto;
@@ -134,7 +134,6 @@ ul#menu_bar li ul {
   position: absolute;
   top: 48px;
   left: 50%;
-  width: 500%;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   box-shadow: none;
@@ -148,7 +147,8 @@ ul#menu_bar li ul {
   -transition: opacity 0.2s;
 }
 ul#menu_bar li ul li { 
-  background: #555; 
+  background: #555;
+  width: 200%;
   display: block; 
   color: #fff;
   text-shadow: 0 -1px 0 #000;
