@@ -13,10 +13,10 @@ class Article implements iDecorator{
         return 'getdata';
     }
 }
-include 'iDecorator.php';
+/*include 'iDecorator.php';
 
 class Article implements iDecorator{
 	public function getData(){
 		return 'i\'ve got the data';
 	}
-}
+}*/

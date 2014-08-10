@@ -4,7 +4,3 @@
 interface iDecorator {
     public function getData();
 }
-
-interface iDecorator{
-	public function getData();
-}
