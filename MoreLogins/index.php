@@ -8,9 +8,19 @@ $nameErr = $passErr = '';
 if(isset($_SESSION['isLogged']) && $_SESSION['isLogged'] == true){
 	echo '<p>Welcome '.$_SESSION['username'].'</p>';
 	echo '<p>You have unlocked level 1 of Beni\'s Dungeon ! Grats !</p>';
+	//echo ;
 }else{
+	//echo 'not working';
 	if($_GET['err'] == 'QQ'){
-		$nameErr = $passErr = 'Invalid Input';
+		switch($_SESSION['errorNumber']){
+			case 112:
+			case 113: $nameErr = $_SESSION['errorMessage'];
+			break;
+			case 114:
+			case 115:$passErr = $_SESSION['errorMessage'];
+			break;
+			default:break;
+		}
 	}
 ?>
 	<form action="<?php echo htmlspecialchars('login.php') ?>" method="post">

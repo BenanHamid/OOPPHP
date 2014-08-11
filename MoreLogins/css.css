@@ -262,6 +262,9 @@ footer#in_footer{
 	padding-bottom:10px;
 	overflow:hidden;
 }
+.footer_links{
+	padding-left:10px;
+}
 .clr{
 	clear:both;
 }

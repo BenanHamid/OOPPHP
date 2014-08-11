@@ -25,8 +25,8 @@
 			
 			</div>
 			<div class="footer_text">
-				<a href="#">Privacy Policy</a>
-				<a href="#">Site map</a>
+				<a class="footer_links" href="#">Privacy Policy</a>
+				<a class="footer_links" href="#">Site map</a>
 			</div>
 		</footer>
 	</footer>

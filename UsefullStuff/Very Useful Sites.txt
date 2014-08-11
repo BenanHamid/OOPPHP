@@ -123,3 +123,9 @@ http://thepiratebay.se/torrent/6483603/WiFi___BlueTooth_Phone_Remote_Control_5.2
 http://www.w3schools.com/css/css_image_sprites.asp - CSS IMAGE SPRITES !
 
 http://www.google.com/design/#resources - GOOGLE TUTORIALS FOR WEB DESIGN !
+http://www.slideshare.net/ZendCon/elegant-ways-of-handling-php-errors-and-exceptions-presentation - error handling
+http://stackoverflow.com/questions/11467045/how-to-name-exceptions-php - how to name exceptions
+http://stackoverflow.com/questions/2587903/preventing-direct-access-to-a-php-page-only-access-if-redirected - Very clever way
+of restricting DIRECT page access !
+https://discussion.dreamhost.com/thread-124677.html - another way to prevent direct page access !
+http://forums.phpfreaks.com/topic/89173-solved-deny-direct-access-to-php-file/ -MOAR
