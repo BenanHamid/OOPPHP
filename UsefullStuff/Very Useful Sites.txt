@@ -130,3 +130,5 @@ of restricting DIRECT page access !
 https://discussion.dreamhost.com/thread-124677.html - another way to prevent direct page access !
 http://forums.phpfreaks.com/topic/89173-solved-deny-direct-access-to-php-file/ -MOAR
 http://www.vesti.bg/pari/biznes/afp-autsorsingyt-pomaga-na-bylgarskata-ikonomika-6019569 - READ IT TODAY OUTSOURCING !
+http://netsecurity.about.com/od/hackertools/a/What-Hackers-Do-Not-Want-You-To-Know-About-The-Tamper-Data-Firefox-Add-on.htm
+TAMPER DATA FOR FIREFOX !
